@@ -1,0 +1,40 @@
+# -*- graphviz-dot -*-
+digraph FP
+{
+	graph[ranksep=1.5,
+	      ratio="expand",
+	      concentrate=false,
+	      rank=new,
+	      constraint=true,
+	      label="The LISP family",
+	      labelloc=t,
+	      splines=true];
+
+	"IPL" -> "Lisp";
+	"Lisp" -> { "InterLisp", "MacLisp" } ->	"Lisp Machine Lisp" -> { "ZetaLisp", "LMI Lisp" } -> "Common Lisp";
+	"MacLisp" -> "Scheme" -> "MultiLisp";
+	"Lisp" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
+	"Vital-Lisp" -> "Visual Lisp";
+	"Common Lisp" -> "XLISP" -> "XLISP 3";
+	"Scheme" -> "XLISP 3";
+	"MacLisp" -> "Emacs Lisp";
+	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
+	"NIL" -> "T";
+	"Scheme" -> "Kawa";
+	"Common Lisp" -> "Clojure" -> "Kawa";
+	"Scheme" -> "newLISP";
+	"Lisp" -> "Logo";
+	"Lisp" -> "Franz Lisp";
+	"Lisp" -> "Scheme" -> "T";
+	"Lisp" -> "PicoLisp";
+	"Lisp" -> "LFE";
+	"Lisp" -> "Hy";
+	"Scheme" -> "Racket" -> "Arc";
+	"Racket" -> "Typed Racket" -> "Hackett";
+	"Racket" -> "Lazy Racket" -> "Hackett";
+	"Clojure" -> "Carp";
+	"MacLisp" -> "Le Lisp" -> "EuLisp";
+	"Le Lisp" -> "ISLISP";
+	"Common Lisp" -> "EuLisp" -> "Dylan";
+	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
+}
