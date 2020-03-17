@@ -10,8 +10,18 @@ digraph FP
 	      labelloc=t,
 	      splines=true];
 
+	// Entry and exit nodes from/into other languages are doublecircle formatted.
+
 	"IPL" -> "Lisp";
-	"Lisp" -> { "InterLisp", "MacLisp" } ->	"Lisp Machine Lisp" -> { "ZetaLisp", "LMI Lisp" } -> "Common Lisp";
+	"IPL" [shape = doublecircle];
+	"Lisp" -> "InterLisp";
+	"Lisp" -> "MacLisp";
+	"MacLisp" -> "Lisp Machine Lisp";
+	"Interlisp" -> "Lisp Machine Lisp";
+	"Lisp Machine Lisp" -> "ZetaLisp";
+	"Lisp Machine Lisp" -> "LMI Lisp";
+	"ZetaLisp" -> "Common Lisp";
+	"LMI Lisp" -> "Common Lisp";
 	"MacLisp" -> "Scheme" -> "MultiLisp";
 	"Lisp" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
 	"Vital-Lisp" -> "Visual Lisp";
@@ -24,6 +34,7 @@ digraph FP
 	"Common Lisp" -> "Clojure" -> "Kawa";
 	"Scheme" -> "newLISP";
 	"Lisp" -> "Logo";
+	"Logo" [shape = doublecircle];
 	"Lisp" -> "Franz Lisp";
 	"Lisp" -> "Scheme" -> "T";
 	"Lisp" -> "PicoLisp";
