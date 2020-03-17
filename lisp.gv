@@ -11,19 +11,32 @@ digraph FP
 	      splines=true];
 
 	// Entry and exit nodes from/into other languages are doublecircle formatted.
+	// Any changes should render on http://www.webgraphviz.com
 
-	"IPL" -> "Lisp";
+	"IPL" -> "LISP";
 	"IPL" [shape = doublecircle];
-	"Lisp" -> "InterLisp";
-	"Lisp" -> "MacLisp";
+	"LISP" -> "LISP 1.5";
+	"LISP 1.5" -> "InterLisp";
+	"LISP 1.5" -> "MacLisp";
+	"LISP 1.5" -> "Basic PDP-1 LISP";
 	"MacLisp" -> "Lisp Machine Lisp";
-	"Interlisp" -> "Lisp Machine Lisp";
+	"MacLisp" -> "Bibop (MIT)";
+	"MacLisp" -> "Lisp 1.6 (Stanford)";
+	"Lisp 1.6 (Stanford)" -> "UCI Lisp";
+	"Basic PDP-1 LISP" -> "BBN Lisp";
+	"BBN Lisp" -> "UCI Lisp";
+	"BBN Lisp" -> "InterLisp";
+	"InterLisp" -> "Lisp Machine Lisp";
 	"Lisp Machine Lisp" -> "ZetaLisp";
 	"Lisp Machine Lisp" -> "LMI Lisp";
 	"ZetaLisp" -> "Common Lisp";
 	"LMI Lisp" -> "Common Lisp";
 	"MacLisp" -> "Scheme" -> "MultiLisp";
-	"Lisp" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
+	"MacLisp" -> "MDL";
+	"MDL" -> "Cromemco Lisp";
+	"MDL" [shape = doublecircle];
+	"Bibop (MIT)" -> "Cromemco Lisp";
+	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
 	"Vital-Lisp" -> "Visual Lisp";
 	"Common Lisp" -> "XLISP" -> "XLISP 3";
 	"Scheme" -> "XLISP 3";
@@ -33,13 +46,13 @@ digraph FP
 	"Scheme" -> "Kawa";
 	"Common Lisp" -> "Clojure" -> "Kawa";
 	"Scheme" -> "newLISP";
-	"Lisp" -> "Logo";
+	"LISP 1.5" -> "Logo";
 	"Logo" [shape = doublecircle];
-	"Lisp" -> "Franz Lisp";
-	"Lisp" -> "Scheme" -> "T";
-	"Lisp" -> "PicoLisp";
-	"Lisp" -> "LFE";
-	"Lisp" -> "Hy";
+	"LISP 1.5" -> "Franz Lisp";
+	"LISP 1.5" -> "Scheme" -> "T";
+	"LISP 1.5" -> "PicoLisp";
+	"LISP 1.5" -> "LFE";
+	"LISP 1.5" -> "Hy";
 	"Scheme" -> "Racket" -> "Arc";
 	"Racket" -> "Typed Racket" -> "Hackett";
 	"Racket" -> "Lazy Racket" -> "Hackett";
