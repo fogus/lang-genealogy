@@ -55,6 +55,9 @@ digraph FP
 	"LISP 1.5" -> "PicoLisp";
 	"LISP 1.5" -> "LFE";
 	"LISP 1.5" -> "Hy";
+	"LISP 1.5" -> "LISP F1";
+	"LISP F1" -> "LISP F3";
+	"InterLisp" -> "LISP F3";
 	"Scheme" -> "Racket" -> "Arc";
 	"Racket" -> "Typed Racket" -> "Hackett";
 	"Racket" -> "Lazy Racket" -> "Hackett";
