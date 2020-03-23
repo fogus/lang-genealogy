@@ -11,6 +11,7 @@ digraph FP
 	      splines=true];
 
 	// Entry and exit nodes from/into other languages are doublecircle formatted.
+	// Dotted lines represent minor changes from one to another (e.g. renaming)
 	// Any changes should render on http://www.webgraphviz.com
 
 	"IPL" -> "LISP";
@@ -29,7 +30,7 @@ digraph FP
 	"BBN Lisp" -> "UCI Lisp";
 	"BBN Lisp" -> "InterLisp";
 	"InterLisp" -> "Lisp Machine Lisp";
-	"Lisp Machine Lisp" -> "ZetaLisp";
+	"Lisp Machine Lisp" -> "ZetaLisp" [style=dotted];
 	"Lisp Machine Lisp" -> "LMI Lisp";
 	"ZetaLisp" -> "Common Lisp";
 	"LMI Lisp" -> "Common Lisp";
