@@ -51,7 +51,7 @@ digraph FP
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
 	"Logo" [shape = doublecircle];
-	"LISP 1.5" -> "Franz Lisp";
+	"MacLisp" -> "Franz Lisp";
 	"LISP 1.5" -> "Scheme" -> "T";
 	"LISP 1.5" -> "PicoLisp";
 	"LISP 1.5" -> "LFE";
