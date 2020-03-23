@@ -54,7 +54,9 @@ digraph FP
 	"MacLisp" -> "Franz Lisp";
 	"LISP 1.5" -> "Scheme" -> "T";
 	"LISP 1.5" -> "PicoLisp";
-	"LISP 1.5" -> "LFE";
+	"Erlang" -> "LFE";
+	"Erlang" [shape = doublecircle];
+	"Scheme" -> "LFE";
 	"LISP 1.5" -> "Hy";
 	"LISP 1.5" -> "LISP F1";
 	"LISP F1" -> "LISP F3";
