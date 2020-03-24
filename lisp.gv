@@ -31,6 +31,8 @@ digraph FP
 	"BBN Lisp" -> "UCI Lisp";
 	"BBN Lisp" -> "InterLisp";
 	"InterLisp" -> "Lisp Machine Lisp";
+	"InterLisp" -> "InterLisp-D";
+	"InterLisp-D" -> "InterLisp-VAX";
 	"Lisp Machine Lisp" -> "ZetaLisp" [style=dotted];
 	"Lisp Machine Lisp" -> "LMI Lisp";
 	"ZetaLisp" -> "Common Lisp";
@@ -48,7 +50,6 @@ digraph FP
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
 	"NIL" -> "T";
-	"Scheme" -> "Kawa";
 	"Scheme" -> "Kawa";
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
