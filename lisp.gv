@@ -25,8 +25,8 @@ digraph FP
 	"LISP 1.5" -> "Basic PDP-1 LISP";
 	"MacLisp" -> "Lisp Machine Lisp";
 	"MacLisp" -> "Bibop (MIT)";
-	"MacLisp" -> "Lisp 1.6 (Stanford)";
-	"Lisp 1.6 (Stanford)" -> "UCI Lisp";
+	"MacLisp" -> "Lisp 1.6 \n (Stanford Lisp)";
+	"Lisp 1.6 \n (Stanford Lisp)" -> "UCI Lisp";
 	"Basic PDP-1 LISP" -> "BBN Lisp";
 	"BBN Lisp" -> "UCI Lisp";
 	"BBN Lisp" -> "InterLisp";
@@ -48,7 +48,7 @@ digraph FP
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
 	"NIL" -> "T";
 	"Scheme" -> "Kawa";
-	"Common Lisp" -> "Clojure" -> "Kawa";
+	"Scheme" -> "Kawa";
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
 	"Logo" [shape = doublecircle];
@@ -65,6 +65,12 @@ digraph FP
 	"Scheme" -> "Racket" -> "Arc";
 	"Racket" -> "Typed Racket" -> "Hackett";
 	"Racket" -> "Lazy Racket" -> "Hackett";
+    "Common Lisp" -> "Clojure";
+    "Scheme" -> "Clojure";
+    "ML" -> "Clojure";
+	"ML" [shape = doublecircle];
+    "Java" -> "Clojure";
+	"Java" [shape = doublecircle];
 	"Clojure" -> "Carp";
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
 	"Scheme" -> "EuLisp";
