@@ -43,6 +43,7 @@ digraph FP
 	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
 	"Vital-Lisp" -> "Visual Lisp";
 	"Common Lisp" -> "XLISP" -> "XLISP 3";
+	"XLISP" -> "XLISP-STAT";
 	"Scheme" -> "XLISP 3";
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
