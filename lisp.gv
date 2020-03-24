@@ -13,11 +13,12 @@ digraph FP
 	// Entry and exit nodes from/into other languages are doublecircle formatted.
 	// Dotted lines represent minor changes from one to another (e.g. renaming)
 	// Any changes should render on http://www.webgraphviz.com
+	// A great lang reference at http://hopl.info/home.prx
 
 	"IPL" -> "LISP";
 	"IPL" [shape = doublecircle];
-	"Church typed-lambda calculus" -> "LISP";
-	"Church typed-lambda calculus" [shape = doublecircle];	
+	"Church typed \n lambda calculus" -> "LISP";
+	"Church typed \n lambda calculus" [shape = doublecircle];	
 	"LISP" -> "LISP 1.5";
 	"LISP 1.5" -> "InterLisp";
 	"LISP 1.5" -> "MacLisp";
@@ -66,7 +67,13 @@ digraph FP
 	"Racket" -> "Lazy Racket" -> "Hackett";
 	"Clojure" -> "Carp";
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
+	"Scheme" -> "EuLisp";
 	"Le Lisp" -> "ISLISP";
 	"Common Lisp" -> "EuLisp" -> "Dylan";
 	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
+	"EuLisp" -> "youtoo";
+	"EuLisp" -> "ELLIS";
+	"Linda" -> "ELLIS";
+	"Linda" [shape = doublecircle];
+	"EuLisp" -> "Euscheme";
 }
