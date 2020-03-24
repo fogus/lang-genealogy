@@ -67,11 +67,11 @@ digraph FP
 	"Scheme" -> "Racket" -> "Arc";
 	"Racket" -> "Typed Racket" -> "Hackett";
 	"Racket" -> "Lazy Racket" -> "Hackett";
-    "Common Lisp" -> "Clojure";
-    "Scheme" -> "Clojure";
-    "ML" -> "Clojure";
+	"Common Lisp" -> "Clojure";
+	"Scheme" -> "Clojure";
+	"ML" -> "Clojure";
 	"ML" [shape = doublecircle];
-    "Java" -> "Clojure";
+	"Java" -> "Clojure";
 	"Java" [shape = doublecircle];
 	"Clojure" -> "Carp";
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
