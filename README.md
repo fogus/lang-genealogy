@@ -5,6 +5,7 @@
 * "Cromemco Lisp" -- [manual](https://www.autometer.de/unix4fun/z80pack/ftp/cromemco/Cromemco%20Lisp%20Instruction%20Manual%20023-4006%20198006.PDF)
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
+* "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html>
 * "youtoo" -- <http://www.cs.bath.ac.uk/~jap/ak1/youtoo/youtoo.html>
 
