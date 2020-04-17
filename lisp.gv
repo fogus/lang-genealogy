@@ -50,6 +50,9 @@ digraph FP
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
 	"NIL" -> "T";
+	"Scheme" -> "T";
+	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
+	"T" -> "RABBIT";
 	"Scheme" -> "Kawa";
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
@@ -79,7 +82,6 @@ digraph FP
 	"Scheme" -> "EuLisp";
 	"Le Lisp" -> "ISLISP";
 	"Common Lisp" -> "EuLisp" -> "Dylan";
-	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
 	"EuLisp" -> "youtoo";
 	"EuLisp" -> "ELLIS";
 	"Linda" -> "ELLIS";

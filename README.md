@@ -6,6 +6,7 @@
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
+* "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
 * "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html>
 * "youtoo" -- <http://www.cs.bath.ac.uk/~jap/ak1/youtoo/youtoo.html>
 
