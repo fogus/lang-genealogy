@@ -38,9 +38,9 @@ digraph FP
 	"ZetaLisp" -> "Common Lisp";
 	"LMI Lisp" -> "Common Lisp";
 	"MacLisp" -> "Scheme" -> "MultiLisp";
-	"MacLisp" -> "MDL";
-	"MDL" -> "Cromemco Lisp";
-	"MDL" [shape = doublecircle];
+	"MacLisp" -> "MDL (Muddle)";
+	"MDL (Muddle)" -> "Cromemco Lisp";
+	"MDL (Muddle)" [shape = doublecircle];
 	"Bibop (MIT)" -> "Cromemco Lisp";
 	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
 	"Vital-Lisp" -> "Visual Lisp";
