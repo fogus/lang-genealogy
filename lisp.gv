@@ -49,6 +49,9 @@ digraph FP
 	"Scheme" -> "XLISP 3";
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
+	"Self" -> "Dylan";
+	"Dylan" -> "Brenda";
+	"Self" [shape = doublecircle];
 	"NIL" -> "T";
 	"Scheme" -> "T";
 	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
