@@ -50,8 +50,10 @@ digraph FP
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
 	"Self" -> "Dylan";
+	"Smalltalk" -> "Dylan";
 	"Dylan" -> "Brenda";
 	"Self" [shape = doublecircle];
+	"Smalltalk" [shape = doublecircle];
 	"NIL" -> "T";
 	"Scheme" -> "T";
 	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
