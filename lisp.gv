@@ -11,7 +11,8 @@ digraph FP
 	      splines=true];
 
 	// Entry and exit nodes from/into other languages are doublecircle formatted.
-	// Dotted lines represent minor changes from one to another (e.g. renaming)
+	// Dotted lines represent minor changes from one to another (e.g. renaming).
+	// Dashed lines represent an implementation language relationship.
 	// Any changes should render on http://www.webgraphviz.com
 	// A great lang reference at http://hopl.info/home.prx
 
@@ -41,6 +42,8 @@ digraph FP
 	"MacLisp" -> "MDL (Muddle)";
 	"MDL (Muddle)" -> "Cromemco Lisp";
 	"MDL (Muddle)" -> "ZIL";
+	"MDL (Muddle)" -> "CLU" [style=dashed];
+	"CLU" [shape = doublecircle];
 	"MDL (Muddle)" [shape = doublecircle];
 	"Bibop (MIT)" -> "Cromemco Lisp";
 	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
