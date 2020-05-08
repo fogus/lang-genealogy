@@ -35,11 +35,13 @@ digraph FP
 	"LISP 1.5" -> "MLISP";  // JMC's M-expression LISP
 	"LISP 1.5" -> "The New\nLanguage";	
 	"LISP 1.5" -> "GM"; // Graham Machine
-	"LISP 1.5" -> "PLANNER";
+	"LISP 1.5" -> "PLANNER" -> "QLISP";
+	"LISP 1.5" -> "LISP A";
 	"COMIT" -> "The New\nLanguage";
 	"COMIT" [shape = doublecircle];
 	"The New\nLanguage" -> "LISP 2";
 	"The New\nLanguage" [shape=note];
+	"LISP A" [shape=note];
 	"GM" [shape=note];
 	"ALGOL" -> "LISP 2";	
 	"MacLisp" -> "Lisp Machine Lisp";
@@ -84,6 +86,7 @@ digraph FP
 	"Scheme" -> "Kawa";
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
+	"LISP 1.5" -> "GOL";
 	"Logo" [shape = doublecircle];
 	"MacLisp" -> "Franz Lisp";
 	"LISP 1.5" -> "Scheme" -> "T";

@@ -7,9 +7,11 @@
 * "COMIT" -- Yngve, Victor "A programming language for mechanical translation" Mechanical Translation 4, 3 (Dec. 1957), 59-65.
 * "Cromemco Lisp" -- [manual](https://www.autometer.de/unix4fun/z80pack/ftp/cromemco/Cromemco%20Lisp%20Instruction%20Manual%20023-4006%20198006.PDF)
 * "GM" -- (Graham Machine) Gilmore, P.C. (1963) Gilmore, P.C. "An Abstract Computer with a LISP-Like Language Without a Label Operator"
+* "GOL" -- Pople, Harry E, Jr. "GOL: A Goal Oriented Language for the Computer" PhD Thesis, Carnegie-Mellon University, 1969
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
 * "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
+* "LISP A" -- Sandewall, E.J. "LISP A: A LISP-like System for Incremental Computing" 
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
