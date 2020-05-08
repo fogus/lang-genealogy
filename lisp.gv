@@ -13,13 +13,16 @@ digraph FP
 	// Entry and exit nodes from/into other languages are doublecircle formatted.
 	// Dotted lines represent minor changes from one to another (e.g. renaming).
 	// Dashed lines represent an implementation language relationship.
+	// Note shapes mean that the language was described in a paper and didn't have an implementation.
 	// Any changes should render on http://www.webgraphviz.com
 	// A great lang reference at http://hopl.info/home.prx
 
 	"IPL" -> "LISP";
 	"IPL" [shape = doublecircle];
 	"Church typed \n lambda calculus" -> "LISP";
-	"Church typed \n lambda calculus" [shape = doublecircle];	
+	"Church typed \n lambda calculus" [shape = doublecircle];
+	"ALGOL" -> "LISP";
+	"ALGOL" [shape = doublecircle];
 	"LISP" -> "LISP 1.5";
 	"LISP 1.5" -> "InterLisp";
 	"LISP 1.5" -> "MacLisp";
@@ -27,6 +30,13 @@ digraph FP
 	"LISP 1.5" -> "EMIDEC\nLISP" [style=dotted];
 	"LISP 1.5" -> "MLISP";  // JMC's M-expression LISP
 	"LISP 1.5" -> "The New\nLanguage";	
+	"LISP 1.5" -> "GM"; // Graham Machine
+	"COMIT" -> "The New\nLanguage";
+	"COMIT" [shape = doublecircle];
+	"The New\nLanguage" -> "LISP 2";
+	"The New\nLanguage" [shape=note];
+	"GM" [shape=note];
+	"ALGOL" -> "LISP 2";	
 	"MacLisp" -> "Lisp Machine Lisp";
 	"MacLisp" -> "Bibop (MIT)";
 	"MacLisp" -> "Lisp 1.6 \n (Stanford Lisp)";
