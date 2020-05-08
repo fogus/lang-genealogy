@@ -9,7 +9,8 @@
 * "GM" -- (Graham Machine) Gilmore, P.C. (1963) Gilmore, P.C. "An Abstract Computer with a LISP-Like Language Without a Label Operator"
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
-" "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
+* "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
+* "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
 * "The New Language" by Timothy Hart "The New Compiler" M.I.T., A.I. Project, A.I.MEMO 39, Cambridge, 1962

@@ -28,12 +28,14 @@ digraph FP
 	"LISP 1.5" -> "Linear LISP";
 	"Linear LISP" -> "TREET";
 	"Linear LISP" [shape=note];
+	"LISP 1.5" -> "Atlas Lisp";
 	"LISP 1.5" -> "MacLisp";
 	"LISP 1.5" -> "Basic PDP-1 LISP";
 	"LISP 1.5" -> "EMIDEC\nLISP" [style=dotted];
 	"LISP 1.5" -> "MLISP";  // JMC's M-expression LISP
 	"LISP 1.5" -> "The New\nLanguage";	
 	"LISP 1.5" -> "GM"; // Graham Machine
+	"LISP 1.5" -> "PLANNER";
 	"COMIT" -> "The New\nLanguage";
 	"COMIT" [shape = doublecircle];
 	"The New\nLanguage" -> "LISP 2";
