@@ -25,6 +25,9 @@ digraph FP
 	"ALGOL" [shape = doublecircle];
 	"LISP" -> "LISP 1.5";
 	"LISP 1.5" -> "InterLisp";
+	"LISP 1.5" -> "Linear LISP";
+	"Linear LISP" -> "TREET";
+	"Linear LISP" [shape=note];
 	"LISP 1.5" -> "MacLisp";
 	"LISP 1.5" -> "Basic PDP-1 LISP";
 	"LISP 1.5" -> "EMIDEC\nLISP" [style=dotted];
@@ -85,7 +88,6 @@ digraph FP
 	"Erlang" -> "LFE";
 	"Erlang" [shape = doublecircle];
 	"Scheme" -> "LFE";
-	"LISP 1.5" -> "Hy";
 	"LISP 1.5" -> "2-LISP" -> "3-LISP";
 	"LISP 1.5" -> "LISP F1";
 	"LISP F1" -> "LISP F3";
@@ -100,6 +102,9 @@ digraph FP
 	"Java" -> "Clojure";
 	"Java" [shape = doublecircle];
 	"Clojure" -> "Carp";
+	"Clojure" -> "Hy";
+	"Python" -> "Hy";
+	"Python" [shape = doublecircle];
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
 	"Scheme" -> "EuLisp";
 	"Le Lisp" -> "ISLISP";
