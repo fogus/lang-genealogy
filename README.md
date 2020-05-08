@@ -8,6 +8,8 @@
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
+* "The New Language" by Timothy Hart "The New Compiler" M.I.T., A.I. Project, A.I.MEMO 39, Cambridge, 1962
+* "The New Language" by M. Levin "Syntax of the New Language", M.I.T., Proj. MAC, MAC-M-158, A.I. Project, A.I.MEMO 68, Cambridge, 1964
 * "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html>
 * "youtoo" -- <http://www.cs.bath.ac.uk/~jap/ak1/youtoo/youtoo.html>
 
