@@ -40,6 +40,7 @@ digraph FP
 	"MacLisp" -> "Scheme" -> "MultiLisp";
 	"MacLisp" -> "MDL (Muddle)";
 	"MDL (Muddle)" -> "Cromemco Lisp";
+	"MDL (Muddle)" -> "ZIL";
 	"MDL (Muddle)" [shape = doublecircle];
 	"Bibop (MIT)" -> "Cromemco Lisp";
 	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
