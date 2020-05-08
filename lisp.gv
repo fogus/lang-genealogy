@@ -47,6 +47,7 @@ digraph FP
 	"Basic PDP-1 LISP" -> "BBN Lisp";
 	"BBN Lisp" -> "UCI Lisp";
 	"BBN Lisp" -> "InterLisp";
+	"BBN Lisp" -> "ByteLisp" -> "InterLisp";
 	"InterLisp" -> "Lisp Machine Lisp";
 	"InterLisp" -> "InterLisp-D";
 	"InterLisp-D" -> "InterLisp-VAX";
