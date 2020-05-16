@@ -20,6 +20,7 @@
 * "TREET" -- Haines, E. C., Jr., The TREET List Processing Language, MITRE Corp., Information System Language Studies Number Eight SR-133
 * "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html>
 * "youtoo" -- <http://www.cs.bath.ac.uk/~jap/ak1/youtoo/youtoo.html>
+* "Zetalisp" -- Chinual, 4th Ed. <http://www.bitsavers.org/pdf/mit/cadr/chinual_4thEd_Jul81.pdf>
 
 # TODO
 
