@@ -55,9 +55,10 @@ digraph FP
 	"InterLisp" -> "Lisp Machine Lisp";
 	"InterLisp" -> "InterLisp-D";
 	"InterLisp-D" -> "InterLisp-VAX";
-	"Lisp Machine Lisp" -> "ZetaLisp" [style=dotted];
+	"Lisp Machine Lisp" -> "Zetalisp" [style=dotted];
 	"Lisp Machine Lisp" -> "LMI Lisp";
-	"ZetaLisp" -> "Common Lisp";
+	"Zetalisp" -> "Common Lisp";
+	"Zetalisp" -> "Flavors" [style=dashed];
 	"LMI Lisp" -> "Common Lisp";
 	"MacLisp" -> "Scheme" -> "MultiLisp";
 	"MacLisp" -> "MDL (Muddle)";
