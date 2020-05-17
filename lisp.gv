@@ -118,10 +118,14 @@ digraph FP
 	"Scheme" -> "Oaklisp" -> "TELOS";
 	"Common Lisp" -> "CLOS";
 	"CLOS" [shape=component];
+	"CLOS" -> "TELOS";
+	"Oaklisp" -> "TELOS";
 	"Le Lisp" -> "ISLISP";
 	"Common Lisp" -> "EuLisp" -> "Dylan";
 	"EuLisp" -> "youtoo";
 	"EuLisp" -> "ELLIS";
+	"EuLisp" -> "TELOS";
+	"TELOS" [shape=component];
 	"Linda" -> "ELLIS";
 	"Linda" [shape = doublecircle];
 	"EuLisp" -> "Euscheme";
