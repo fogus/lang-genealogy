@@ -16,6 +16,7 @@
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
+* "TELOS" -- Kramer, Bryan M. et al "Implementing Telos"
 * "The New Language" by Timothy Hart "The New Compiler" M.I.T., A.I. Project, A.I.MEMO 39, Cambridge, 1962
 * "The New Language" by M. Levin "Syntax of the New Language", M.I.T., Proj. MAC, MAC-M-158, A.I. Project, A.I.MEMO 68, Cambridge, 1964
 * "TREET" -- Haines, E. C., Jr., The TREET List Processing Language, MITRE Corp., Information System Language Studies Number Eight SR-133
