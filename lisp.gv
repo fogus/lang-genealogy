@@ -14,6 +14,7 @@ digraph FP
 	// Dotted lines represent minor changes from one to another (e.g. renaming).
 	// Dashed lines represent an implementation language relationship.
 	// Note shapes mean that the language was described in a paper and didn't have an implementation.
+	// Component shapes mean that one is a subsystem of the other (e.g. CL -> CLOS)
 	// Any changes should render on http://www.webgraphviz.com
 	// A great lang reference at http://hopl.info/home.prx
 
@@ -114,7 +115,9 @@ digraph FP
 	"Python" [shape = doublecircle];
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
 	"Scheme" -> "EuLisp";
-	"Scheme" -> "Oaklisp";
+	"Scheme" -> "Oaklisp" -> "TELOS";
+	"Common Lisp" -> "CLOS";
+	"CLOS" [shape=component];
 	"Le Lisp" -> "ISLISP";
 	"Common Lisp" -> "EuLisp" -> "Dylan";
 	"EuLisp" -> "youtoo";
