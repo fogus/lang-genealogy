@@ -114,6 +114,7 @@ digraph FP
 	"Python" [shape = doublecircle];
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
 	"Scheme" -> "EuLisp";
+	"Scheme" -> "Oaklisp";
 	"Le Lisp" -> "ISLISP";
 	"Common Lisp" -> "EuLisp" -> "Dylan";
 	"EuLisp" -> "youtoo";
