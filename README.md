@@ -7,6 +7,7 @@
 * "ByteLisp" -- Deutsch, L. Peter "ByteLisp and its Alto implementation"
 * "COMIT" -- Yngve, Victor "A programming language for mechanical translation" Mechanical Translation 4, 3 (Dec. 1957), 59-65.
 * "Cromemco Lisp" -- [manual](https://www.autometer.de/unix4fun/z80pack/ftp/cromemco/Cromemco%20Lisp%20Instruction%20Manual%20023-4006%20198006.PDF)
+* "Fugue" --  Dannenberg, Fraley, and Velikonja, ``Fugue: A Functional Language for Sound Synthesis,'' Computer, 24(7) 1991, pp. 36-41.
 * "GM" -- (Graham Machine) Gilmore, P.C. (1963) Gilmore, P.C. "An Abstract Computer with a LISP-Like Language Without a Label Operator"
 * "GOL" -- Pople, Harry E, Jr. "GOL: A Goal Oriented Language for the Computer" PhD Thesis, Carnegie-Mellon University, 1969
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
