@@ -95,6 +95,9 @@ digraph FP
 	"Scheme" -> "newLISP";
 	"LISP 1.5" -> "Logo";
 	"LISP 1.5" -> "GOL";
+	"LISP 1.5" -> "Kernel";
+	"Scheme" -> "Kernel";
+	"Kernel" [shape = note];
 	"Logo" [shape = doublecircle];
 	"MacLisp" -> "Franz Lisp";
 	"LISP 1.5" -> "Scheme" -> "T";
