@@ -1,5 +1,6 @@
 # lisp-genealogy
 
+* "APROL" -- Holmes, Dennis and John E Howland "APROL A Hybrid Language"
 * "Basic PDP-1 Lisp" by L. Peter Deutsh (1963) -- [paper](http://s3data.computerhistory.org/pdp-1/DEC.pdp_1.1964.102650371.pdf)
 * "Bibop" -- <https://www.saildart.org/BIBOP.RPG[UP,DOC]4>
 * "Brenda" -- a learning subset of Dylan, some information at https://www.cs.cornell.edu/courses/cs212/1998sp/psets/ps6/ps6.html

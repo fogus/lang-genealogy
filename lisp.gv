@@ -74,6 +74,10 @@ digraph FP
 	"Common Lisp" -> "XLISP" -> "XLISP 3";
 	"XLISP" -> "XLISP-STAT";
 	"Scheme" -> "XLISP 3";
+	"Scheme" -> "APROL";
+	"J" -> "APROL";
+	"J" [shape = doublecircle];
+	"APROL" [shape = note];
 	"MacLisp" -> "Emacs Lisp";
 	"MacLisp" -> "NIL" -> "Common Lisp" -> "Dylan";
 	"Self" -> "Dylan";
