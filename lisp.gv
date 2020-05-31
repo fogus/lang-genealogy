@@ -99,7 +99,7 @@ digraph FP
 	"Scheme" -> "Kernel";
 	"Kernel" [shape = note];
 	"Logo" [shape = doublecircle];
-	"MacLisp" -> "Franz Lisp";
+	"MacLisp" -> "Franz Lisp" -> "Allegro Common Lisp";
 	"LISP 1.5" -> "Scheme" -> "T";
 	"LISP 1.5" -> "PicoLisp";
 	"Erlang" -> "LFE";
