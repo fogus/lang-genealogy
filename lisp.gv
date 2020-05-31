@@ -117,6 +117,8 @@ digraph FP
 	"ML" -> "Clojure";
 	"ML" [shape = doublecircle];
 	"Java" -> "Clojure";
+	"Java" -> "ABCL";
+	"Common Lisp" -> "ABCL";
 	"Java" [shape = doublecircle];
 	"Clojure" -> "Carp";
 	"Clojure" -> "Hy";
