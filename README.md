@@ -18,6 +18,7 @@
 * "Oaklisp" -- Lang K. et al, (1986) Lang K. et al, "Oaklisp: An Object-Oriented Scheme with First-Class Types" 
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
+* "SXM" -- http://www.malgil.com/sxm/
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
 * "TELOS" -- Kramer, Bryan M. et al "Implementing Telos"
 * "The New Language" by Timothy Hart "The New Compiler" M.I.T., A.I. Project, A.I.MEMO 39, Cambridge, 1962

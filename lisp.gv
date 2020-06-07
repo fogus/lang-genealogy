@@ -93,6 +93,7 @@ digraph FP
 	"T" -> "RABBIT";
 	"Scheme" -> "Kawa";
 	"Scheme" -> "newLISP";
+	"Scheme" -> "XSCHEME" -> "SXM";
 	"LISP 1.5" -> "Logo";
 	"LISP 1.5" -> "GOL";
 	"LISP 1.5" -> "Kernel";
