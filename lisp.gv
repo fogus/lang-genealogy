@@ -17,6 +17,7 @@ digraph FP
 	// Component shapes mean that one is a subsystem of the other (e.g. CL -> CLOS)
 	// Any changes should render on http://www.webgraphviz.com
 	// A great lang reference at http://hopl.info/home.prx
+	// Another at http://www.softwarepreservation.org/projects/LISP/
 
 	"IPL" -> "LISP";
 	"IPL" [shape = doublecircle];
@@ -44,7 +45,8 @@ digraph FP
 	"The New\nLanguage" [shape=note];
 	"LISP A" [shape=note];
 	"GM" [shape=note];
-	"ALGOL" -> "LISP 2";	
+	"ALGOL" -> "LISP 2";
+	"LISP 2" -> "GTL";
 	"MacLisp" -> "Lisp Machine Lisp";
 	"MacLisp" -> "Bibop (MIT)";
 	"MacLisp" -> "Lisp 1.6 \n (Stanford Lisp)";

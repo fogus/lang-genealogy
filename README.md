@@ -10,6 +10,7 @@
 * "Fugue" --  Dannenberg, Fraley, and Velikonja, ``Fugue: A Functional Language for Sound Synthesis,'' Computer, 24(7) 1991, pp. 36-41.
 * "GM" -- (Graham Machine) Gilmore, P.C. (1963) Gilmore, P.C. "An Abstract Computer with a LISP-Like Language Without a Label Operator"
 * "GOL" -- Pople, Harry E, Jr. "GOL: A Goal Oriented Language for the Computer" PhD Thesis, Carnegie-Mellon University, 1969
+* "GTL" -- Georgia Tech Language https://mcjones.org/dustydecks/archives/2018/06/04/1001/
 * "Kernel" -- "Fexprs as the basis of Lisp function application or $vau : the ultimate abstraction" by John N. Shutt
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
