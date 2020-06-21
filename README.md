@@ -17,6 +17,7 @@
 * "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
 * "LISP A" -- Sandewall, E.J. "LISP A: A LISP-like System for Incremental Computing" 
 * "Oaklisp" -- Lang K. et al, (1986) Lang K. et al, "Oaklisp: An Object-Oriented Scheme with First-Class Types" 
+* "PDP-6 Lisp" -- https://www.dreamsongs.com/Files/Hopl2.pdf
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "SXM" -- http://www.malgil.com/sxm/
