@@ -65,7 +65,19 @@ digraph FP
 	"Zetalisp" -> "Common Lisp";
 	"Zetalisp" -> "Flavors" [style=dashed];
 	"LMI Lisp" -> "Common Lisp";
-	"MacLisp" -> "Scheme" -> "MultiLisp";
+
+	// Scheme
+	"Scheme" -> "R1RS";
+	"Scheme" -> "R2RS";	
+	"Scheme" -> "R3RS";	
+	"Scheme" -> "R4RS";	
+	"Scheme" -> "R5RS";	
+	"Scheme" -> "R6RS";	
+	"Scheme" -> "R7RS-small";	
+	"Scheme" -> "R7RS-large";	
+
+	"MacLisp" -> "Scheme";
+	"Scheme" -> "MultiLisp";
 	"MacLisp" -> "MDL (Muddle)";
 	"MDL (Muddle)" -> "Cromemco Lisp";
 	"MDL (Muddle)" -> "ZIL";

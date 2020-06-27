@@ -19,6 +19,7 @@
 * "Oaklisp" -- Lang K. et al, (1986) Lang K. et al, "Oaklisp: An Object-Oriented Scheme with First-Class Types" 
 * "PDP-6 Lisp" -- https://www.dreamsongs.com/Files/Hopl2.pdf
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
+* "R7RS-?" -- https://bitbucket.org/cowan/r7rs-wg1-infra/src/default/R7RSHomePage.md
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "SXM" -- http://www.malgil.com/sxm/
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
