@@ -67,6 +67,8 @@ digraph FP
 	"LMI Lisp" -> "Common Lisp";
 
 	// Scheme
+	"ACTOR"  -> "Scheme";
+	"ACTOR" [shape = doublecircle];
 	"Scheme" -> "R1RS";
 	"Scheme" -> "R2RS";	
 	"Scheme" -> "R3RS";	
