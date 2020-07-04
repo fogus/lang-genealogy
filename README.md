@@ -4,6 +4,7 @@
 * "APROL" -- Holmes, Dennis and John E Howland "APROL A Hybrid Language"
 * "Basic PDP-1 Lisp" by L. Peter Deutsh (1963) -- [paper](http://s3data.computerhistory.org/pdp-1/DEC.pdp_1.1964.102650371.pdf)
 * "Bibop" -- <https://www.saildart.org/BIBOP.RPG[UP,DOC]4>
+* "Black" -- "The Reflective Language Black"
 * "Brenda" -- a learning subset of Dylan, some information at https://www.cs.cornell.edu/courses/cs212/1998sp/psets/ps6/ps6.html
 * "ByteLisp" -- Deutsch, L. Peter "ByteLisp and its Alto implementation"
 * "COMIT" -- Yngve, Victor "A programming language for mechanical translation" Mechanical Translation 4, 3 (Dec. 1957), 59-65.
@@ -22,6 +23,7 @@
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"
 * "R7RS-?" -- https://bitbucket.org/cowan/r7rs-wg1-infra/src/default/R7RSHomePage.md
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
+* "RScheme" -- "RbCl: A Reflective Object-Oriented Concurrent Language without a Run-time Kernel"
 * "SXM" -- http://www.malgil.com/sxm/
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
 * "TELOS" -- Kramer, Bryan M. et al "Implementing Telos"

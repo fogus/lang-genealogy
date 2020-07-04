@@ -76,7 +76,14 @@ digraph FP
 	"Scheme" -> "R5RS";	
 	"Scheme" -> "R6RS";	
 	"Scheme" -> "R7RS-small";	
-	"Scheme" -> "R7RS-large";	
+	"Scheme" -> "R7RS-large";
+
+	"R4RS" -> "RScheme";
+	"R5RS" -> "RScheme";
+	"Dylan" -> "RScheme";
+
+	"RScheme" -> "Black";
+	"3-LISP" -> "Black";
 
 	"MacLisp" -> "Scheme";
 	"Scheme" -> "MultiLisp";
