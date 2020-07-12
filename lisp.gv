@@ -96,6 +96,7 @@ digraph FP
 	"Bibop (MIT)" -> "Cromemco Lisp";
 	"LISP 1.5" -> "XLISP" -> "AutoLisp" -> "Vital-Lisp";
 	"XLISP" -> "Fugue";
+	"XLISP" -> "XLISP-PLUS";
 	"Fugue" [shape = note];
 	"Vital-Lisp" -> "Visual Lisp";
 	"Common Lisp" -> "XLISP" -> "XLISP 3";
