@@ -16,6 +16,7 @@
 * "Kernel" -- "Fexprs as the basis of Lisp function application or $vau : the ultimate abstraction" by John N. Shutt
 * "LISP F3" -- [paper](http://www.softwarepreservation.org/projects/LISP/uppsala/Nordstrom-LISP_F3_Users_Guide-1978.pdf)
 * "LISP" by John McCarthy (1959) "Recursive Functions of Symbolic Expressions and their Computation by Machine" MIT AI Lab., AI Memo No. 8, Cambridge.
+* "LISP 1.55" -- "Stanford export version of LISP 1.5" -- http://www.softwarepreservation.org/projects/LISP/imperial_college/Campbell-Imperial_College_LISP_Prog_Guide.pdf
 * "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
 * "LISP A" -- Sandewall, E.J. "LISP A: A LISP-like System for Incremental Computing" 
 * "Oaklisp" -- Lang K. et al, (1986) Lang K. et al, "Oaklisp: An Object-Oriented Scheme with First-Class Types" 

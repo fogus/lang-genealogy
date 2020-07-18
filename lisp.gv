@@ -31,6 +31,7 @@ digraph FP
 	"Linear LISP" -> "TREET";
 	"Linear LISP" [shape=note];
 	"LISP 1.5" -> "Atlas Lisp";
+	"LISP 1.5" -> "LISP 1.55";
 	"LISP 1.5" -> "MacLisp";
 	"LISP 1.5" -> "Basic PDP-1 LISP";
 	"LISP 1.5" -> "EMIDEC\nLISP" [style=dotted];
