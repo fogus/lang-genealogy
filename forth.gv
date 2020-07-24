@@ -1,0 +1,23 @@
+# -*- graphviz-dot -*-
+digraph FP
+{
+	graph[ranksep=1.5,
+	      ratio="expand",
+	      concentrate=false,
+	      rank=new,
+	      constraint=true,
+	      label="The Forth family",
+	      labelloc=t,
+	      splines=true];
+
+	// Entry and exit nodes from/into other languages are doublecircle formatted.
+	// Dotted lines represent minor changes from one to another (e.g. renaming).
+	// Dashed lines represent an implementation language relationship.
+	// Note shapes mean that the language was described in a paper and didn't have a released implementation.
+	// Component shapes mean that one is a subsystem of the other
+	// Any changes should render on http://www.webgraphviz.com
+	// A great lang reference at http://hopl.info/home.prx
+	// Another at http://www.forth.org
+
+	
+}
