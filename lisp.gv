@@ -52,12 +52,12 @@ digraph FP
 	"MacLisp" -> "Bibop (MIT)";
 	"MacLisp" -> "Lisp 1.6 \n (Stanford Lisp)";
 	"Lisp 1.6 \n (Stanford Lisp)" -> "UCI Lisp";
-	"Basic PDP-1 LISP" -> "BBN Lisp";
+	"Basic PDP-1 LISP" -> "BBN-Lisp";
 	"Basic PDP-1 LISP" -> "PDP-6 Lisp";
 	"LISP 1.5" -> "PDP-6 Lisp" -> "MacLisp";
-	"BBN Lisp" -> "UCI Lisp";
-	"BBN Lisp" -> "InterLisp";
-	"BBN Lisp" -> "ByteLisp" -> "InterLisp";
+	"BBN-Lisp" -> "UCI Lisp";
+	"BBN-Lisp" -> "InterLisp";
+	"BBN-Lisp" -> "ByteLisp" -> "InterLisp";
 	"InterLisp" -> "Lisp Machine Lisp";
 	"InterLisp" -> "InterLisp-D";
 	"InterLisp-D" -> "InterLisp-VAX";

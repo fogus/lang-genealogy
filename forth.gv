@@ -19,5 +19,6 @@ digraph FP
 	// A great lang reference at http://hopl.info/home.prx
 	// Another at http://www.forth.org
 
-	
+	"Lukasewcleicz Postfix" -> "SAO Forth";
+	"SAO Forth" -> "SLAC Forth";
 }
