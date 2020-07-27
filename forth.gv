@@ -21,4 +21,8 @@ digraph FP
 
 	"Lukasewcleicz Postfix" -> "SAO Forth";
 	"SAO Forth" -> "SLAC Forth";
+	"SLAC Forth" -> "RSI B5500 Forth";
+	"RSI B5500 Forth" -> "Mohasco 1108 Forth";
+	"RSI B5500 Forth" -> "Mohasco B5500 Forth";
+	
 }
