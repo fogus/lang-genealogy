@@ -19,10 +19,13 @@ digraph FP
 	// A great lang reference at http://hopl.info/home.prx
 	// Another at http://www.forth.org
 
-	"Lukasewcleicz Postfix" -> "SAO Forth";
-	"SAO Forth" -> "SLAC Forth";
-	"SLAC Forth" -> "RSI B5500 Forth";
-	"RSI B5500 Forth" -> "Mohasco 1108 Forth";
-	"RSI B5500 Forth" -> "Mohasco B5500 Forth";
-	
+	"Lukasewcleicz Postfix" -> "SAO Pre-Forth";
+	"SAO Pre-Forth" -> "SLAC Pre-Forth";
+	"SLAC Pre-Forth" -> "RSI B5500 Pre-Forth";
+	"RSI B5500 Pre-Forth" -> "Mohasco 1108 Pre-Forth";
+	"RSI B5500 Pre-Forth" -> "Mohasco B5500 Pre-Forth";
+	"Mohasco B5500 Pre-Forth" -> "NRAO IBM 360 Forth";
+	"NRAO IBM 360 Forth" -> "NRAO Honeywell 316 Forth" [style=dashed];
+	"NRAO IBM 360 Forth" -> "NRAO PDP-11 Forth" [style=dashed];
+	"NRAO IBM 360 Forth" -> "Forth Inc. Forth";
 }
