@@ -28,4 +28,6 @@ digraph FP
 	"NRAO IBM 360 Forth" -> "NRAO Honeywell 316 Forth" [style=dashed];
 	"NRAO IBM 360 Forth" -> "NRAO PDP-11 Forth" [style=dashed];
 	"NRAO IBM 360 Forth" -> "Forth Inc. Forth";
+	"Forth Inc. Forth" -> "microFORTH";
+	"microFORTH" -> "FIG-FORTH";
 }
