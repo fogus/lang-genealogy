@@ -68,16 +68,16 @@ digraph FP
 	"LMI Lisp" -> "Common Lisp";
 
 	// Scheme
-	"ACTOR"  -> "Scheme";
+	"ACTOR"  -> "SCHEME";
 	"ACTOR" [shape = doublecircle];
-	"Scheme" -> "R1RS";
-	"Scheme" -> "R2RS";	
-	"Scheme" -> "R3RS";	
-	"Scheme" -> "R4RS";	
-	"Scheme" -> "R5RS";	
-	"Scheme" -> "R6RS";	
-	"Scheme" -> "R7RS-small";	
-	"Scheme" -> "R7RS-large";
+	"SCHEME" -> "R1RS";
+	"SCHEME" -> "R2RS";	
+	"SCHEME" -> "R3RS";	
+	"SCHEME" -> "R4RS";	
+	"SCHEME" -> "R5RS";	
+	"SCHEME" -> "R6RS";	
+	"SCHEME" -> "R7RS-small";	
+	"SCHEME" -> "R7RS-large";
 
 	"R4RS" -> "RScheme";
 	"R5RS" -> "RScheme";
@@ -86,8 +86,12 @@ digraph FP
 	"RScheme" -> "Black";
 	"3-LISP" -> "Black";
 
-	"MacLisp" -> "Scheme";
-	"Scheme" -> "MultiLisp";
+	"R1RS" -> "Scheme 84";
+	"Scheme 84" -> "Scheme 48";
+	"R5RS" -> "Scheme 48";
+	
+	"MacLisp" -> "SCHEME";
+	"SCHEME" -> "MultiLisp";
 	"MacLisp" -> "MDL (Muddle)";
 	"MDL (Muddle)" -> "Cromemco Lisp";
 	"MDL (Muddle)" -> "ZIL";
@@ -102,8 +106,8 @@ digraph FP
 	"Vital-Lisp" -> "Visual Lisp";
 	"Common Lisp" -> "XLISP" -> "XLISP 3";
 	"XLISP" -> "XLISP-STAT";
-	"Scheme" -> "XLISP 3";
-	"Scheme" -> "APROL";
+	"SCHEME" -> "XLISP 3";
+	"SCHEME" -> "APROL";
 	"J" -> "APROL";
 	"J" [shape = doublecircle];
 	"APROL" [shape = note];
@@ -115,20 +119,20 @@ digraph FP
 	"Self" [shape = doublecircle];
 	"Smalltalk" [shape = doublecircle];
 	"NIL" -> "T";
-	"Scheme" -> "T";
+	"SCHEME" -> "T";
 	"T" -> "EuLisp" -> "ISLISP" -> "OpenLisp";
 	"T" -> "RABBIT";
-	"Scheme" -> "Kawa";
-	"Scheme" -> "newLISP";
-	"Scheme" -> "XSCHEME" -> "SXM";
+	"SCHEME" -> "Kawa";
+	"SCHEME" -> "newLISP";
+	"SCHEME" -> "XSCHEME" -> "SXM";
 	"LISP 1.5" -> "Logo";
 	"LISP 1.5" -> "GOL";
 	"LISP 1.5" -> "Kernel";
-	"Scheme" -> "Kernel";
+	"SCHEME" -> "Kernel";
 	"Kernel" [shape = note];
 	"Logo" [shape = doublecircle];
 	"MacLisp" -> "Franz Lisp" -> "Allegro Common Lisp";
-	"LISP 1.5" -> "Scheme" -> "T";
+	"LISP 1.5" -> "SCHEME" -> "T";
 	"LISP 1.5" -> "PicoLisp";
 	"Erlang" -> "Lisp Flavoured Erlang";
 	"Erlang" [shape = doublecircle];
@@ -137,11 +141,11 @@ digraph FP
 	"LISP 1.5" -> "LISP F1";
 	"LISP F1" -> "LISP F3";
 	"InterLisp" -> "LISP F3";
-	"Scheme" -> "Racket" -> "Arc";
+	"SCHEME" -> "Racket" -> "Arc";
 	"Racket" -> "Typed Racket" -> "Hackett";
 	"Racket" -> "Lazy Racket" -> "Hackett";
 	"Common Lisp" -> "Clojure";
-	"Scheme" -> "Clojure";
+	"SCHEME" -> "Clojure";
 	"ML" -> "Clojure";
 	"ML" [shape = doublecircle];
 	"Java" -> "Clojure";
@@ -153,8 +157,8 @@ digraph FP
 	"Python" -> "Hy";
 	"Python" [shape = doublecircle];
 	"MacLisp" -> "Le Lisp" -> "EuLisp";
-	"Scheme" -> "EuLisp";
-	"Scheme" -> "Oaklisp" -> "TELOS";
+	"SCHEME" -> "EuLisp";
+	"SCHEME" -> "Oaklisp" -> "TELOS";
 	"Common Lisp" -> "CLOS";
 	"CLOS" [shape=component];
 	"CLOS" -> "TELOS";

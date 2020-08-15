@@ -25,6 +25,8 @@
 * "R7RS-?" -- https://bitbucket.org/cowan/r7rs-wg1-infra/src/default/R7RSHomePage.md
 * "Reflection and Sentantics in Lisp" by Brian Cantwell Smith (describes 2-Lisp and 3-Lisp)
 * "RScheme" -- "RbCl: A Reflective Object-Oriented Concurrent Language without a Run-time Kernel"
+* "Scheme 48" -- https://web.archive.org/web/20110402001244/https://scsh.net/docu/s48-manual/s48manual.html
+* "Scheme 84" -- "Scheme 84 Interim Reference Manual" by Friedman, Wand, et al.
 * "SXM" -- http://www.malgil.com/sxm/
 * "T" -- "T: a dialect of Lisp or LAMBDA: The ultimate software tool" by Rees and Adams
 * "TELOS" -- Kramer, Bryan M. et al "Implementing Telos"
