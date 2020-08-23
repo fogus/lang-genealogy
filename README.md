@@ -34,7 +34,7 @@
 * "The New Language" by M. Levin "Syntax of the New Language", M.I.T., Proj. MAC, MAC-M-158, A.I. Project, A.I.MEMO 68, Cambridge, 1964
 * "TREET" -- Haines, E. C., Jr., The TREET List Processing Language, MITRE Corp., Information System Language Studies Number Eight SR-133
 * "XLISP-PLUS" -- <https://almy.us/xlisp.html>
-* "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html>
+* "XLISP-STAT" -- <http://homepage.divms.uiowa.edu/~luke/xls/xlsinfo/xlsinfo.html> & <http://www.edm2.com/index.php/XLISP-STAT>
 * "youtoo" -- <http://www.cs.bath.ac.uk/~jap/ak1/youtoo/youtoo.html>
 * "Zetalisp" -- Chinual, 4th Ed. <http://www.bitsavers.org/pdf/mit/cadr/chinual_4thEd_Jul81.pdf>
 
