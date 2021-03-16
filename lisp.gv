@@ -29,6 +29,7 @@ digraph FP
 	"MICROPLANNER" -> "CONNIVER"; // Sussman, 1972
 	"PLASMA" -> "ACTOR";          // Hewitt, 1973
 	"LISP 1.5" -> "SCHEMER";      // Sussman and Steele, 1975
+	"CONNIVER" -> "SCHEMER";
 	"PLASMA" -> "SCHEMER";
 	
 	"IPL" -> "LISP";
@@ -53,6 +54,7 @@ digraph FP
 	"LISP 1.5" -> "The New\nLanguage";	
 	"LISP 1.5" -> "GM"; // Graham Machine
 	"PLANNER" -> "QLISP";
+	"PLANNER" -> "MICROPLANNER";
 	"LISP 1.5" -> "LISP A";
 	"COMIT" -> "The New\nLanguage";
 	"COMIT" [shape = doublecircle];
@@ -82,10 +84,10 @@ digraph FP
 	"LMI Lisp" -> "Common Lisp";
 
 	// Scheme
+	"ALGOL" -> "SCHEMER" [ label="ALGOL 60" ];
 	"SCHEMER" -> "SCHEME";
 	"ACTOR"  -> "SCHEME";
 	"ACTOR" [shape = doublecircle];
-	"PLASMA" -> "ACTOR";
 	"SCHEME" -> "R1RS";
 	"SCHEME" -> "R2RS";	
 	"SCHEME" -> "R3RS";	
