@@ -8,6 +8,7 @@
 * "Brenda" -- a learning subset of Dylan, some information at https://www.cs.cornell.edu/courses/cs212/1998sp/psets/ps6/ps6.html
 * "ByteLisp" -- Deutsch, L. Peter "ByteLisp and its Alto implementation"
 * "COMIT" -- Yngve, Victor "A programming language for mechanical translation" Mechanical Translation 4, 3 (Dec. 1957), 59-65.
+* "CONVERT" -- Guzman, "CONVERT-Design of a language for symbol manipulation, and its corresponding interpreter"
 * "Cromemco Lisp" -- [manual](https://www.autometer.de/unix4fun/z80pack/ftp/cromemco/Cromemco%20Lisp%20Instruction%20Manual%20023-4006%20198006.PDF)
 * "Fugue" --  Dannenberg, Fraley, and Velikonja, ``Fugue: A Functional Language for Sound Synthesis,'' Computer, 24(7) 1991, pp. 36-41.
 * "GM" -- (Graham Machine) Gilmore, P.C. (1963) Gilmore, P.C. "An Abstract Computer with a LISP-Like Language Without a Label Operator"
@@ -19,6 +20,7 @@
 * "LISP 1.55" -- "Stanford export version of LISP 1.5" -- http://www.softwarepreservation.org/projects/LISP/imperial_college/Campbell-Imperial_College_LISP_Prog_Guide.pdf
 * "LISP 2" -- Abrahams, P.W. "The Lisp 2 Programming Language and System." (1966) [AFIPS] Proceedings of the 1966 Fall Joint Computer Conference FJCC 29
 * "LISP A" -- Sandewall, E.J. "LISP A: A LISP-like System for Incremental Computing" 
+* "METEOR" -- Bobrow, 1964 "METEOR: A LISP Interpreter for String Transformations"
 * "Oaklisp" -- Lang K. et al, (1986) Lang K. et al, "Oaklisp: An Object-Oriented Scheme with First-Class Types" 
 * "PDP-6 Lisp" -- https://www.dreamsongs.com/Files/Hopl2.pdf
 * "PLANNER" -- Hewitt, Carl "PLANNER: A Language for Proving Theorems in Robots"

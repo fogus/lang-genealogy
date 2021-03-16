@@ -19,13 +19,24 @@ digraph FP
 	// A great lang reference at http://hopl.info/home.prx
 	// Another at http://www.softwarepreservation.org/projects/LISP/
 
+	// The MIT AI Languages
+	"LISP" -> "LISP 1.5";
+	"LISP" -> "METEOR";           // Bobrow, 1964
+	"LISP" -> "CONVERT";          // Guzman, 1965
+	"LISP 1.5" -> "PLANNER";      // Hewitt, 1969
+	"LISP 1.5" -> "MDL (Muddle)"; // Sussman and Hewitt, 1970
+	"LISP 1.5" -> "MICROPLANNER"; // Sussman, 1971
+	"MICROPLANNER" -> "CONNIVER"; // Sussman, 1972
+	"PLASMA" -> "ACTOR";          // Hewitt, 1973
+	"LISP 1.5" -> "SCHEMER";      // Sussman and Steele, 1975
+	"PLASMA" -> "SCHEMER";
+	
 	"IPL" -> "LISP";
 	"IPL" [shape = doublecircle];
 	"Church typed \n lambda calculus" -> "LISP";
 	"Church typed \n lambda calculus" [shape = doublecircle];
 	"ALGOL" -> "LISP";
 	"ALGOL" [shape = doublecircle];
-	"LISP" -> "LISP 1.5";
 	"LISP 1.5" -> "InterLisp";
 	"LISP 1.5" -> "Linear LISP";
 	"Linear LISP" -> "TREET";
@@ -41,7 +52,7 @@ digraph FP
 	"LISP 1.5" -> "MLISP";  // JMC's M-expression LISP
 	"LISP 1.5" -> "The New\nLanguage";	
 	"LISP 1.5" -> "GM"; // Graham Machine
-	"LISP 1.5" -> "PLANNER" -> "QLISP";
+	"PLANNER" -> "QLISP";
 	"LISP 1.5" -> "LISP A";
 	"COMIT" -> "The New\nLanguage";
 	"COMIT" [shape = doublecircle];
@@ -71,8 +82,10 @@ digraph FP
 	"LMI Lisp" -> "Common Lisp";
 
 	// Scheme
+	"SCHEMER" -> "SCHEME";
 	"ACTOR"  -> "SCHEME";
 	"ACTOR" [shape = doublecircle];
+	"PLASMA" -> "ACTOR";
 	"SCHEME" -> "R1RS";
 	"SCHEME" -> "R2RS";	
 	"SCHEME" -> "R3RS";	
@@ -95,7 +108,6 @@ digraph FP
 	
 	"MacLisp" -> "SCHEME";
 	"SCHEME" -> "MultiLisp";
-	"MacLisp" -> "MDL (Muddle)";
 	"MDL (Muddle)" -> "Cromemco Lisp";
 	"MDL (Muddle)" -> "ZIL";
 	"MDL (Muddle)" -> "CLU" [style=dashed];
