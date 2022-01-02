@@ -1,33 +1,257 @@
 # -*- graphviz-dot -*-
-digraph FP
-{
-	graph[ranksep=1.5,
-	      ratio="expand",
-	      concentrate=false,
-	      rank=new,
-	      constraint=true,
-	      label="The Forth family",
-	      labelloc=t,
-	      splines=true];
+// Entry and exit nodes from/into other languages are doublecircle formatted.
+// Dotted lines represent minor changes from one to another (e.g. renaming).
+// Dashed lines represent an implementation language relationship.
+// Note shapes mean that the language was described in a paper and didn't have a released implementation.
+// Component shapes mean that one is a subsystem of the other
+// Any changes should render on http://www.webgraphviz.com
+// A great lang reference at http://hopl.info/home.prx
+// Another at http://www.forth.org
+// Seed obtained from Anton Ertl at http://www.complang.tuwien.ac.at/forth/family-tree/
 
-	// Entry and exit nodes from/into other languages are doublecircle formatted.
-	// Dotted lines represent minor changes from one to another (e.g. renaming).
-	// Dashed lines represent an implementation language relationship.
-	// Note shapes mean that the language was described in a paper and didn't have a released implementation.
-	// Component shapes mean that one is a subsystem of the other
-	// Any changes should render on http://www.webgraphviz.com
-	// A great lang reference at http://hopl.info/home.prx
-	// Another at http://www.forth.org
-
-	"Lukasewcleicz Postfix" -> "SAO Pre-Forth";
-	"SAO Pre-Forth" -> "SLAC Pre-Forth";
-	"SLAC Pre-Forth" -> "RSI B5500 Pre-Forth";
-	"RSI B5500 Pre-Forth" -> "Mohasco 1108 Pre-Forth";
-	"RSI B5500 Pre-Forth" -> "Mohasco B5500 Pre-Forth";
-	"Mohasco B5500 Pre-Forth" -> "NRAO IBM 360 Forth";
-	"NRAO IBM 360 Forth" -> "NRAO Honeywell 316 Forth" [style=dashed];
-	"NRAO IBM 360 Forth" -> "NRAO PDP-11 Forth" [style=dashed];
-	"NRAO IBM 360 Forth" -> "Forth Inc. Forth";
-	"Forth Inc. Forth" -> "microFORTH";
-	"microFORTH" -> "FIG-FORTH";
+digraph tree { rankdir=LR
+	page="12,17"
+	overlap=false
+	graph [fontsize=8]; edge [fontsize=8]; node [shape=plaintext fontsize=8];
+	ranksep = 0.2; nodesep = .04;
+	AST01 [label="AST.01" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="700,0" URL="http://stackosaurus.com/misc/Forth_AST.01.pdf" tooltip="Authors: Forth Astronomical Users Group"];
+	Forth77 [label="Forth-77" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="700,0" URL="http://www.complang.tuwien.ac.at/forth/forth-77.txt" tooltip="Authors: European FORTH Users Group"];
+	AST01  -> Forth77 [weight=100]
+	Forth78 [label="Forth-78" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="800,0" URL="http://forth.org/OffeteStore/1003_InsideF83.pdf" tooltip="Authors: Forth Standards Team"];
+	Forth77  -> Forth78 [weight=100]
+	Forth79 [label="Forth-79" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="900,0" URL="http://www.complang.tuwien.ac.at/forth/standards/Forth-79.pdf" tooltip="Authors: Forth Standards Team"];
+	Forth78  -> Forth79 [weight=100]
+	Forth83 [label="Forth-83" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="1300,0" URL="http://forth.sourceforge.net/standard/fst83/index.html" tooltip="Authors: Forth Standards Team"];
+	Forth79  -> Forth83 [weight=100]
+	Forth94 [label="ANS Forth" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="2400,0" URL="http://www.complang.tuwien.ac.at/forth/dpans-html/dpans.htm" tooltip="Authors: X3J14 TC"];
+	Forth83  -> Forth94 [weight=100]
+	Forth2012 [label="Forth-2012" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="4400,0" URL="http://forth-standard.org" tooltip="Authors: Forth 200x Committee"];
+	Forth94  -> Forth2012 [weight=100]
+	Forth [fontname="Helvetica" shape=plaintext height=0 pos="100,0" URL="http://www.forth.com/resources/evolution/evolve_1.html" tooltip="Chuck Moore's Language"];
+	Forth  -> AST01 [weight=10 color="green"] 
+	miniFORTH [fontname="Helvetica" shape=plaintext height=0 pos="300,0" URL="http://www.forth.com/resources/evolution/evolve_2.html#2.2" tooltip="Chuck Moore's Language as Forth Inc. product"];
+	Forth  -> miniFORTH [weight=100]
+	microFORTH [fontname="Helvetica" shape=plaintext height=0 pos="700,0" URL="http://www.forth.com/resources/evolution/evolve_2.html#2.3" tooltip="Author: Dean Sanderson @ Forth, Inc."];
+	miniFORTH  -> microFORTH [weight=100]
+	figForth [label="fig-Forth" fontname="Helvetica" shape=plaintext height=0 pos="800,0" URL="http://www.eforth.com.tw/academy/library/figforth.htm" tooltip="Authors: Robert Selzer, Bill Ragsdale, and others"];
+	microFORTH  -> figForth [weight=100]
+	Forth78  -> figForth [weight=1 color="red"]
+	F83 [fontname="Helvetica" shape=plaintext height=0 pos="1300,0" URL="http://www.eforth.com.tw/academy/library/insidef83%5Crootsf83.htm" tooltip="Authors: Henry Laxen and Mike Perry"];
+	Forth83  -> F83 [weight=1 color="red"]
+	figForth  -> F83 [weight=10 color="green"] 
+	polyFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1200,0" URL="http://www.forth.com/resources/evolution/evolve_3.html#3.2" tooltip="FORTH, Inc.'s PC offering"];
+	miniFORTH  -> polyFORTH [weight=100]
+	chipFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1500,0" URL="http://www.computer-solutions.co.uk/chipdev/cf.htm" tooltip="Cross-development environment by Forth, Inc."];
+	microFORTH  -> chipFORTH [weight=10 color="green"] 
+	polyFORTH  -> chipFORTH [weight=100]
+	SwiftForth [fontname="Helvetica" shape=plaintext height=0 pos="2600,0" URL="http://www.forth.com/swiftforth/index.html" tooltip="Native-code, ANS Forth from Forth, Inc."];
+	Forth94  -> SwiftForth [weight=1 color="red"]
+	polyFORTH  -> SwiftForth [weight=100]
+	SwiftX [fontname="Helvetica" shape=plaintext height=0 pos="2700,0" URL="http://www.forth.com/embedded/index.html" tooltip="Native-code, cross-development environment"];
+	chipFORTH  -> SwiftX [weight=10 color="green"] 
+	SwiftForth  -> SwiftX [weight=100]
+	STOIC [fontname="Helvetica" shape=plaintext height=0 pos="500,0" URL="http://hopl.murdoch.edu.au/showlanguage2.prx?exp=2537" tooltip="by Jonathan Sachs for DG Nova"];
+	Forth  -> STOIC [weight=10 color="green"] 
+	LSE [fontname="Helvetica" shape=plaintext height=0 pos="800,0"];
+	STOIC  -> LSE [weight=10 color="green"] 
+	magicl [label="MAGIC/L" fontname="Helvetica" shape=plaintext height=0 pos="800,0"];
+	STOIC  -> magicl [weight=10 color="green"] 
+	MVPForth [label="MVP-Forth" fontname="Helvetica" shape=plaintext height=0 pos="1000,0" URL="http://theforthsource.com/history.html" tooltip="public domain implementation of Forth-79, Roy Martin et al."];
+	Forth79  -> MVPForth [weight=1 color="red"]
+	vicforth [label="VIC Forth" fontname="Helvetica" shape=plaintext height=0 pos="1200,0" URL="http://ftp.funet.fi/pub/cbm/vic20/programming/VIC-Forth/index.html" tooltip="by Tom Zimmer"];
+	figForth  -> vicforth [weight=100]
+	hes64forth [label="64 Forth" fontname="Helvetica" shape=plaintext height=0 pos="1300,0" URL="ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/    " tooltip="by Tom Zimmer"];
+	vicforth  -> hes64forth [weight=100]
+	c64forth79 [label="C64 FORTH/79" fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	Forth79  -> c64forth79 [weight=1 color="red"]
+	blazinforth [label="Blazin' Forth" fontname="Helvetica" shape=plaintext height=0 pos="1500,0" URL="ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/" tooltip="(C) Scott Ballantyne    "];
+	Forth83  -> blazinforth [weight=1 color="red"]
+	forthcargile [label="Forth (Cargile&Riley)" fontname="Helvetica" shape=plaintext height=0 pos="1200,0"];
+	figForth  -> forthcargile [weight=100]
+	Forth79  -> forthcargile [weight=1 color="red"]
+	superforth64 [label="Super Forth 64" fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	MVPForth  -> superforth64 [weight=100]
+	tinyforth64 [label="Tiny FORTH-64" fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	figForth  -> tinyforth64 [weight=100]
+	triforth [label="Tri FORTH" fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	figForth  -> triforth [weight=100]
+	UNIFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1400,0"];
+	Forth79  -> UNIFORTH [weight=1 color="red"]
+	sixtyforth [label="Sixty FORTH" fontname="Helvetica" shape=plaintext height=0 pos="1400,0"];
+	figForth  -> sixtyforth [weight=100]
+	whitelightning [label="White Lightning" fontname="Helvetica" shape=plaintext height=0 pos="1400,0"];
+	figForth  -> whitelightning [weight=100]
+	forth64 [label="Forth-64" fontname="Helvetica" shape=plaintext height=0 pos="1500,0"];
+	Forth79  -> forth64 [weight=1 color="red"]
+	Forth83  -> forth64 [weight=10 color="green"] 
+	masterforth [label="Master FORTH" fontname="Helvetica" shape=plaintext height=0 pos="1600,0"];
+	Forth83  -> masterforth [weight=1 color="red"]
+	enhancedforth [label="Enhanced FORTH" fontname="Helvetica" shape=plaintext height=0 pos="1600,0"];
+	figForth  -> enhancedforth [weight=100]
+	geoFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1900,0" URL="ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/    "];
+	figForth  -> geoFORTH [weight=100]
+	cmForth [fontname="Helvetica" shape=plaintext height=0 pos="1400,0"];
+	miniFORTH  -> cmForth [weight=100]
+	Pygmy [fontname="Helvetica" shape=plaintext height=0 pos="2200,0" URL="http://www.eskimo.com/~pygmy/forth.html" tooltip="by Frank Sergeant"];
+	cmForth  -> Pygmy [weight=10 color="green"] 
+	fourIM [label="4IM" fontname="Helvetica" shape=plaintext height=0 pos="3200,0" URL="http://membres.lycos.fr/astrobe    "];
+	Pygmy  -> fourIM [weight=10 color="green"] 
+	cmForth  -> fourIM [weight=10 color="green"] 
+	VolksForth [fontname="Helvetica" shape=plaintext height=0 pos="1500,0" URL="http://www.forth-ev.de/filemgmt/singlefile.php?lid=17" tooltip="for MSDOS, 6502, Z80, Atari ST by Forth Gesellschaft"];
+	figForth  -> VolksForth [weight=100]
+	Forth83  -> VolksForth [weight=1 color="red"]
+	deltatFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1600,0"];
+	VolksForth  -> deltatFORTH [weight=100]
+	Forth83  -> deltatFORTH [weight=1 color="red"]
+	TurboForth [fontname="Helvetica" shape=plaintext height=0 pos="1800,0"];
+	Forth83  -> TurboForth [weight=1 color="red"]
+	VolksForth  -> TurboForth [weight=100]
+	BigForth [fontname="Helvetica" shape=plaintext height=0 pos="2000,0" URL="http://www.jwdt.com/~paysan/bigforth.html" tooltip="Free, native code, by Bernd Paysan    "];
+	Forth94  -> BigForth [weight=1 color="red"]
+	TurboForth  -> BigForth [weight=100]
+	Gforth [fontname="Helvetica" shape=plaintext height=0 pos="2600,0" URL="http://gforth.org" tooltip="Free, portable and fast"];
+	Forth94  -> Gforth [weight=1 color="red"]
+	BigForth  -> Gforth [weight=100]
+	figForth  -> Gforth [weight=10 color="green"] 
+	F83  -> Gforth [weight=10 color="green"] 
+	lmi_pcf [label="LMI PC/Forth" fontname="Helvetica" shape=plaintext height=0 pos="1400,0" URL="DOS Forth by Ray Duncan"];
+	Forth83  -> lmi_pcf [weight=1 color="red"]
+	urforth [label="LMI UR-Forth" fontname="Helvetica" shape=plaintext height=0 pos="1600,0"];
+	Forth83  -> urforth [weight=1 color="red"]
+	lmi_pcf  -> urforth [weight=100]
+	lmi_meta [label="LMI Metacompilers" fontname="Helvetica" shape=plaintext height=0 pos="1500,0"];
+	lmi_pcf  -> lmi_meta [weight=100]
+	kForth [fontname="Helvetica" shape=plaintext height=0 pos="2500,0" URL="http://ccreweb.org/software/kforth/kforth.html" tooltip="Free, by Krishna Myneni"];
+	Forth94  -> kForth [weight=1 color="red"]
+	urforth  -> kForth [weight=10 color="green"] 
+	MultiForth [fontname="Helvetica" shape=plaintext height=0 pos="1000,0" URL="http://www.forth.com/resources/evolution/evolve_3.html#3.2" tooltip="for 68000 from Don Colburn"];
+	figForth  -> MultiForth [weight=100]
+	MacForth [fontname="Helvetica" shape=plaintext height=0 pos="1400,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
+	MultiForth  -> MacForth [weight=100]
+	MacForthplus [label="MacForth+" fontname="Helvetica" shape=plaintext height=0 pos="1700,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
+	MacForth  -> MacForthplus [weight=100]
+	PowerMacForth [fontname="Helvetica" shape=plaintext height=0 pos="2500,0" URL="http://www.macforth.com/" tooltip="Creative Solutions/Forth, Inc./Megawolf"];
+	MacForthplus  -> PowerMacForth [weight=100]
+	Forth94  -> PowerMacForth [weight=1 color="red"]
+	CarbonMacForth [label="Carbon MacForth" fontname="Helvetica" shape=plaintext height=0 pos="3000,0" URL="http://www.macforth.com/" tooltip="Megawolf, MacOS X support"];
+	PowerMacForth  -> CarbonMacForth [weight=100]
+	Forth94  -> CarbonMacForth [weight=1 color="red"]
+	Neon [fontname="Helvetica" shape=plaintext height=0 pos="1500,0" URL="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?Neon" tooltip="by Charles Duff"];
+	Smalltalk [fontname="Helvetica" shape=plaintext height=0 pos="1000,0"];
+	Forth  -> Neon [weight=10 color="green"] 
+	Smalltalk  -> Neon [weight=10 color="green"] 
+	Yerk [fontname="Helvetica" shape=plaintext height=0 pos="2000,0"];
+	Neon  -> Yerk [weight=100]
+	Mops [fontname="Helvetica" shape=plaintext height=0 pos="2000,0" URL="http://www.powermops.org/" tooltip="by Mike Hore"];
+	Neon  -> Mops [weight=10 color="green"] 
+	PowerMops [fontname="Helvetica" shape=plaintext height=0 pos="2600,0" URL="http://www.powermops.org/" tooltip="by Mike Hore"];
+	Mops  -> PowerMops [weight=100]
+	Flint [fontname="Helvetica" shape=plaintext height=0 pos="1900,0"];
+	PocketForth [fontname="Helvetica" shape=plaintext height=0 pos="2300,0"];
+	Flint  -> PocketForth [weight=10 color="green"] 
+	figForth  -> PocketForth [weight=10 color="green"] 
+	F83Y [fontname="Helvetica" shape=plaintext height=0 pos="1400,0"];
+	F83  -> F83Y [weight=100]
+	ZF [fontname="Helvetica" shape=plaintext height=0 pos="1500,0" tooltip="(aka DF) by Tom Zimmer"];
+	F83Y  -> ZF [weight=100]
+	FPC [label="F-PC" fontname="Helvetica" shape=plaintext height=0 pos="1800,0" URL="http://www.eforth.com.tw/academy/library/f-pctech.htm" tooltip="by Tom Zimmer"];
+	ZF  -> FPC [weight=100]
+	TCOM [fontname="Helvetica" shape=plaintext height=0 pos="2000,0"];
+	FPC  -> TCOM [weight=100]
+	Win32Forth [fontname="Helvetica" shape=plaintext height=0 pos="2400,0" URL="http://win32forth.sourceforge.net/" tooltip="public domain, by Andrew McKewan and Tom Zimmer"];
+	Forth94  -> Win32Forth [weight=1 color="red"]
+	FPC  -> Win32Forth [weight=100]
+	F83  -> Win32Forth [weight=10 color="green"] 
+	Yerk  -> Win32Forth [weight=10 color="green"] 
+	figForth  -> Win32Forth [weight=10 color="green"] 
+	WorkForth [fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	figForth  -> WorkForth [weight=10 color="green"] 
+	PowerForth [fontname="Helvetica" shape=plaintext height=0 pos="1500,0" URL="http://www.mpeltd.demon.co.uk/forthsta.htm" tooltip="by MPE"];
+	Forth83  -> PowerForth [weight=1 color="red"]
+	WorkForth  -> PowerForth [weight=100]
+	ModularForth [fontname="Helvetica" shape=plaintext height=0 pos="1700,0" URL="http://www.mpeltd.demon.co.uk/forthsta.htm" tooltip="by MPE"];
+	Forth83  -> ModularForth [weight=1 color="red"]
+	PowerForth  -> ModularForth [weight=100]
+	GemForth [fontname="Helvetica" shape=plaintext height=0 pos="1800,0"];
+	Forth83  -> GemForth [weight=1 color="red"]
+	PowerForth  -> GemForth [weight=100]
+	PFD [label="ProForth for DOS" fontname="Helvetica" shape=plaintext height=0 pos="1800,0" URL="http://www.mpeltd.demon.co.uk/pfd.htm" tooltip="32-bit by MPE"];
+	Forth83  -> PFD [weight=1 color="red"]
+	PowerForth  -> PFD [weight=100]
+	PFW [label="ProForth for Windows" fontname="Helvetica" shape=plaintext height=0 pos="2100,0" URL="http://www.mpeltd.demon.co.uk/pfw2.htm" tooltip="by MPE"];
+	Forth83  -> PFW [weight=1 color="red"]
+	PFD  -> PFW [weight=100]
+	PFW  -> Win32Forth [weight=10 color="green"] 
+	Pcode [label="UCSD Pascal" fontname="Helvetica" shape=plaintext height=0 pos="800,0"];
+	AnsiC [label="ANSI C" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="2000,0"];
+	SENDIT [fontname="Helvetica" shape=plaintext height=0 pos="2300,0"];
+	AnsiC  -> SENDIT [weight=10 color="green"] 
+	Pcode  -> SENDIT [weight=10 color="green"] 
+	Forth83  -> SENDIT [weight=1 color="red"]
+	OTA [fontname="Helvetica" shape=plaintext height=0 pos="2600,0"];
+	Forth94  -> OTA [weight=1 color="red"]
+	SENDIT  -> OTA [weight=10 color="green"] 
+	Practical [fontname="Helvetica" shape=plaintext height=0 pos="2700,0"];
+	SENDIT  -> Practical [weight=100]
+	VFXW [label="VFX Forth for Windows" fontname="Helvetica" shape=plaintext height=0 pos="2800,0" URL="http://www.mpeltd.demon.co.uk/pfwvfx.htm" tooltip="sophisticated native-code compiler by MPE"];
+	Forth94  -> VFXW [weight=1 color="red"]
+	PFW  -> VFXW [weight=100]
+	SENDIT  -> VFXW [weight=100]
+	XVFX [label="VFX Cross Compilers" fontname="Helvetica" shape=plaintext height=0 pos="2800,0" URL="http://www.mpeltd.demon.co.uk/forth6.htm" tooltip="Cross-development environment by MPE"];
+	Forth94  -> XVFX [weight=1 color="red"]
+	Practical  -> XVFX [weight=10 color="green"] 
+	PFW  -> XVFX [weight=100]
+	bForth [fontname="Helvetica" shape=plaintext height=0 pos="2000,0" tooltip="Author: Bill Muench"];
+	eForth [fontname="Helvetica" shape=plaintext height=0 pos="2100,0" URL="http://forth.org/library/eforth_SOC/eforth_SOC_source/eForth1/" tooltip="Author: C. H. Ting (Bill Muench for the more complete, less popular version)"];
+	bForth  -> eForth [weight=100]
+	RetroForth [fontname="Helvetica" shape=plaintext height=0 pos="2800,0" URL="http://www.retroforth.org/ " tooltip="public domain, by Tom Novelli"];
+	cmForth  -> RetroForth [weight=10 color="green"] 
+	eForth  -> RetroForth [weight=10 color="green"] 
+	Pygmy  -> RetroForth [weight=10 color="green"] 
+	PilotFORTH [fontname="Helvetica" shape=plaintext height=0 pos="2700,0" tooltip="for PalmOS by Neal Bridges, Quartus Handheld Software"];
+	cmForth  -> PilotFORTH [weight=10 color="green"] 
+	Forth94  -> PilotFORTH [weight=1 color="red"]
+	QuartusForth [label="Quartus Forth" fontname="Helvetica" shape=plaintext height=0 pos="2800,0" URL="http://www.quartus.net/products/forth" tooltip="for PalmOS by Neal Bridges, Quartus Handheld Software"];
+	PilotFORTH  -> QuartusForth [weight=100]
+	Forth94  -> QuartusForth [weight=1 color="red"]
+	Reva [fontname="Helvetica" shape=plaintext height=0 pos="3500,0" URL="http://ronware.org/reva/" tooltip="small, cross-platform (x86 Linux and Windows) by Ron Aaron"];
+	RetroForth  -> Reva [weight=100]
+	T4 [fontname="Helvetica" shape=plaintext height=0 pos="3500,0" tooltip="by Jörg Völker presented at Forth-Tagung 2006"];
+	SwiftX  -> T4 [weight=10 color="green"] 
+	popFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1200,0"];
+	figForth  -> popFORTH [weight=100]
+	comFORTH [fontname="Helvetica" shape=plaintext height=0 pos="1600,0" tooltip="by Egmont Woitzel (FORTecH)"];
+	popFORTH  -> comFORTH [weight=100]
+	Forth83  -> comFORTH [weight=1 color="red"]
+	kkForth [fontname="Helvetica" shape=plaintext height=0 pos="2100,0"];
+	Forth83  -> kkForth [weight=1 color="red"]
+	Marc4qForth [label="MARC4 qForth" fontname="Helvetica" shape=plaintext height=0 pos="2400,0" tooltip="on Telefunken TEMIC MARC4 (a very successful 4-bit Forth chip)"];
+	Forth83  -> Marc4qForth [weight=1 color="red"]
+	TalbotForth [label="Talbot tFORTH" fontname="Helvetica" shape=plaintext height=0 pos="1200,0" tooltip="by Talbot Microsystems, CA for 6809 and 6800"];
+	figForth  -> TalbotForth [weight=100]
+	DragonForth [label="Dragon FORTH" fontname="Helvetica" shape=plaintext height=0 pos="3100,0" URL="http://sourceforge.net/projects/dragonforth/" tooltip="for PalmOS by Dimitry Yakimov?"];
+	Forth94  -> DragonForth [weight=1 color="red"]
+	_32FORTH [label="32FORTH" fontname="Helvetica" shape=plaintext height=0 pos="1800,0"];
+	figForth  -> _32FORTH [weight=10 color="green"] 
+	F83  -> _32FORTH [weight=10 color="green"] 
+	MAF [fontname="Helvetica" shape=plaintext height=0 pos="2600,0" URL="ftp://ftp.taygeta.com/pub/Forth/Applications/ANS/maf1v02.zip" tooltip="Minimal ANS Forth by Chris Jakeman written in Forth"];
+	Forth94  -> MAF [weight=1 color="red"]
+	aackosoft_fig [label="Aackosoft FIG-Forth" fontname="Helvetica" shape=plaintext height=0 pos="1200,0" URL="http://tzxvault.retrogames.com/f.htm" tooltip="for the Sinclair ZX-81"];
+	figForth  -> aackosoft_fig [weight=100]
+	FysForth [fontname="Helvetica" shape=plaintext height=0 pos="1300,0"];
+	Forth78  -> FysForth [weight=1 color="red"]
+	tForth [fontname="Helvetica" shape=plaintext height=0 pos="2200,0" URL="http://home.iae.nl/users/mhx/t4artic.html" tooltip="for the Transputer by the Dutch Forth Workshop"];
+	aackosoft_fig  -> tForth [weight=10 color="green"] 
+	FysForth  -> tForth [weight=10 color="green"] 
+	eForth  -> tForth [weight=10 color="green"] 
+	iForth [fontname="Helvetica" shape=plaintext height=0 pos="2500,0" URL="http://users.bart.nl/users/mhx/i4faq.html" tooltip="Featureful optimizing Forth for IA-32, various OSs"];
+	Forth94  -> iForth [weight=1 color="red"]
+	tForth  -> iForth [weight=100]
+	mxForth [fontname="Helvetica" shape=plaintext height=0 pos="2700,0" URL="http://home.vianetworks.nl/users/mhx/mxforth.html" tooltip="Optimizing Forth for IA-32 by Marcel Hendrix"];
+	iForth  -> mxForth [weight=100]
+	jupiter_ace [label="Jupiter ACE" fontname="Helvetica" shape=plaintext height=0 pos="1200,0" URL="http://www.jupiter-ace.co.uk" tooltip="Home computer with Forth in ROM"];
+	Forth79  -> jupiter_ace [weight=10 color="green"] 
+	webForth [fontname="Helvetica" shape=plaintext height=0 pos="5000,0" URL="https://github.com/mitra42/webForth" tooltip="Author: Mitra Ardron"];
+	eForth  -> webForth [weight=100]
+	Forth2012  -> webForth [weight=1 color="red"]
 }
