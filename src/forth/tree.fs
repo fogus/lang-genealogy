@@ -178,8 +178,8 @@ Forth83 begot Forth94
 Forth94 begot Forth2012
 
 \ implementations
-\ Info from HOPL-II paper
 
+\ Info from HOPL-II paper
 \I SAO Pre-Forth
 1958 s" SAO Pre-Forth" name-implementation saoPreForth \ SAO Special Report #11, late 50s; SAO, 1958
 
@@ -545,6 +545,11 @@ urforth inspired kForth
 1980 implementation MultiForth
 figForth begot MultiForth
 
+\I Author: Miller Microcomputer Services
+\U https://www.millermicro.com/mmsforth.html
+1979 implementation MMSForth
+MMSForth conforms-to Forth79
+
 \ from Doug Hoffman
 \ confirmed by Ward McFarland as follows:
 \ Multiforth was the basis for MacForth in early 1984.
@@ -750,12 +755,18 @@ PFW inspired Win32Forth \ <4110a43d.591140234@192.168.0.1>
   PFW begot XVFX
 
 \I Author: Bill Muench
-1990 Implementation bForth
+\U https://web.archive.org/web/20080720002954/http://www.baymoon.com/~bimu/forth/
+1990 Implementation bForth \ metacompiled system
 
 \I Author: C. H. Ting (Bill Muench for the more complete, less popular version)
 \U http://forth.org/library/eforth_SOC/eforth_SOC_source/eForth1/
 1991 Implementation eForth \ actually 1990, but this leads to a bad placement in the timeline
 bForth begot eForth
+
+\I Author: Wonyong Koh, Ph.D. (ANS-ified version of eForth)
+\U https://www.taygeta.com/hforth.html
+1997 Implementation hForth
+eForth inspired hForth
 
 \ RetroForth is a public_domain implementation of the Forth
 \ programming language. Originally written in 1998 by Tom Novelli, and

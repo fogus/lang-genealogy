@@ -132,6 +132,8 @@ digraph tree { rankdir=LR
 	urforth  -> kForth [weight=10 color="green"] 
 	MultiForth [fontname="Helvetica" shape=plaintext height=0 pos="1000,0" URL="http://www.forth.com/resources/evolution/evolve_3.html#3.2" tooltip="for 68000 from Don Colburn"];
 	figForth  -> MultiForth [weight=100]
+	MMSForth [fontname="Helvetica" shape=plaintext height=0 pos="900,0" URL="https://www.millermicro.com/mmsforth.html" tooltip="Author: Miller Microcomputer Services"];
+	Forth79  -> MMSForth [weight=1 color="red"]
 	MacForth [fontname="Helvetica" shape=plaintext height=0 pos="1400,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
 	MultiForth  -> MacForth [weight=100]
 	MacForthplus [label="MacForth+" fontname="Helvetica" shape=plaintext height=0 pos="1700,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
@@ -207,9 +209,11 @@ digraph tree { rankdir=LR
 	Forth94  -> XVFX [weight=1 color="red"]
 	Practical  -> XVFX [weight=10 color="green"] 
 	PFW  -> XVFX [weight=100]
-	bForth [fontname="Helvetica" shape=plaintext height=0 pos="2000,0" tooltip="Author: Bill Muench"];
+	bForth [fontname="Helvetica" shape=plaintext height=0 pos="2000,0" URL="https://web.archive.org/web/20080720002954/http://www.baymoon.com/~bimu/forth/" tooltip="Author: Bill Muench"];
 	eForth [fontname="Helvetica" shape=plaintext height=0 pos="2100,0" URL="http://forth.org/library/eforth_SOC/eforth_SOC_source/eForth1/" tooltip="Author: C. H. Ting (Bill Muench for the more complete, less popular version)"];
 	bForth  -> eForth [weight=100]
+	hForth [fontname="Helvetica" shape=plaintext height=0 pos="2700,0" URL="https://www.taygeta.com/hforth.html" tooltip="Author: Wonyong Koh, Ph.D. (ANS-ified version of eForth)"];
+	eForth  -> hForth [weight=10 color="green"] 
 	RetroForth [fontname="Helvetica" shape=plaintext height=0 pos="2800,0" URL="http://www.retroforth.org/ " tooltip="public domain, by Tom Novelli"];
 	cmForth  -> RetroForth [weight=10 color="green"] 
 	eForth  -> RetroForth [weight=10 color="green"] 
