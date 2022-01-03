@@ -549,6 +549,7 @@ figForth begot MultiForth
 \U https://www.millermicro.com/mmsforth.html
 1979 implementation MMSForth
 MMSForth conforms-to Forth79
+microForth inspired MMSForth \ see the paper "Editors and Editing Technique: A Review of Fancy and Practical Features in the Evolution of the MMSFORTH Screen Editor"
 
 \ from Doug Hoffman
 \ confirmed by Ward McFarland as follows:
