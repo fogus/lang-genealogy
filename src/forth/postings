@@ -1,0 +1,1627 @@
+Article: 101453 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!aconews.univie.ac.at!not-for-mail
+X-newsreader: xrn 9.03-beta-14
+From: anton@mips.complang.tuwien.ac.at (Anton Ertl)
+Subject: Forth family tree (was: The future of Forth)
+Newsgroups: comp.lang.forth
+References: <774e24ad.0406171158.315004d4@posting.google.com>
+Organization: Institut fuer Computersprachen, Technische Universitaet Wien
+Keywords: 
+Date: Fri, 18 Jun 2004 05:13:04 GMT
+Message-ID: <2004Jun18.071304@mips.complang.tuwien.ac.at>
+Lines: 51
+NNTP-Posting-Host: a4.complang.tuwien.ac.at
+X-Trace: 1087539523 tunews.univie.ac.at 33210 128.130.173.65
+X-Complaints-To: abuse@tuwien.ac.at
+Xref: tunews.univie.ac.at comp.lang.forth:101453
+
+guyvf@usa.net (guy-jin) writes:
+>http://www.oreilly.com/news/graphics/prog_lang_poster.pdf
+...
+>You'll notice Forth has only one 'child', postscript.
+
+>So why does Forth, so far, seem
+>to be an evolutionary dead end?
+
+The poster reflects the interest of whoever designed it; i.e., mostly
+Eric Levenez, his version is at <http://www.levenez.com/lang/>, and
+there you see why the Forth line in the diagram ends in 1987; the
+updates were suggested by O'Reilly authors, friends, and conference
+attendees, and you see the O'Reilly books (and presumably the
+interests of these people) at the bottom of the poster.  E.g., the
+poster follows the Python releases closely, but shows only a very
+simple history of Lisp.
+
+Forth has actually been quite prolific, with lots of descendents
+having names containing "Forth": e.g., ColorForth, Forth-83, Gforth),
+and lots of descendents named something else (e.g., Magic/L, Pistol,
+LSE, Fifth.  Note that the magnitude of the difference in name does
+not necessarily indicate the magnitude of the difference in content;
+e.g. Gforth is closer in spirit to PFE than to ColorForth.
+
+So maybe we should document the Forth family tree, too.  I'll make a
+start.  To avoid discussions of whether something constitutes a
+separate language/dialect/variant/whatever, let's just document all
+the implementations and standards there are.  Just send me entries
+like the one below, and I will try to create a family tree from that.
+
+Here's an entry for Gforth (you don't need to be as elaborate as that,
+but having dates would be helpful):
+
+Implementation: Gforth
+Implements: ANS Forth
+Project-start: 1992-07
+Contains-code-from: bigForth 1993
+Inspired-by: fig-Forth
+Inspired-by: F83
+Reference: http://www.complang.tuwien.ac.at/forth/gforth/Docs-html/Origin.html
+Release: 0.2 1996-12
+Release: 0.3 1997-04
+Release: 0.4 1998-12
+Release: 0.5 2000-09
+Release: 0.6 2003-03
+Reference: http://www.complang.tuwien.ac.at/forth/gforth/old/
+
+- anton
+-- 
+M. Anton Ertl  http://www.complang.tuwien.ac.at/anton/home.html
+comp.lang.forth FAQs: http://www.complang.tuwien.ac.at/forth/faq/toc.html
+
+
+Article: 101464 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.cambrium.nl!news.cambrium.nl!newsgate.cistron.nl!news.tele.dk!news.tele.dk!small.news.tele.dk!proxad.net!freenix!sn-xit-02!sn-xit-06!sn-post-01!supernews.com!corp.supernews.com!not-for-mail
+From: Guy Macon <http://www.guymacon.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Fri, 18 Jun 2004 04:42:30 -0700
+Organization: Electrical / Electronics Engineer Resume: http://www.guymacon.com
+Message-ID: <10d5l8podobl033@corp.supernews.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at>
+MIME-Version: 1.0
+Content-Type: Text/Plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8Bit
+X-Complaints-To: abuse@supernews.com
+Lines: 123
+Xref: tunews.univie.ac.at comp.lang.forth:101464
+
+
+Anton Ertl <anton@mips.complang.tuwien.ac.at> says...
+
+>So maybe we should document the Forth family tree, too.  I'll make a
+>start.  To avoid discussions of whether something constitutes a
+>separate language/dialect/variant/whatever, let's just document all
+>the implementations and standards there are.  Just send me entries
+>like the one below, and I will try to create a family tree from that.
+
+Here are the FORTHs for the Commodore Vic/C64/C128 that I know of.
+I will put together a list of CP/M FORTHs this weekend.
+
+64 FORTH [C64 cart] (1983, Tom Zimmer, HES)
+Full FIG FORTH implementation with editor, compiler and interpreter.
+Expanded version of VIC FORTH for the C64 which includes disk support,
+trace, decompile and assembler tools, plus audio and sprite support.
+http://project64.c64.org/misc/64forthm.zip
+ftp://ftp.funet.fi/pub/cbm/c64/programming/64FORTH.zip
+http://project64.ath.cx/misc/64forthm.zip
+
+C64 FORTH/79 [C64] (1983, Greg Harris, Performance Micro Products)
+"Conforms to FORTH-79 standard with double-number extensions." Nice
+commercial package, with plenty of C64-dependent niceties like
+graphics, disk access, screen editing included.
+
+Blazin' Forth [C64,264] (© 1985 Scott Ballantyne)
+Complete implementation of FORTH-83 with support for sound, turtle
+graphics, sprites and strings. A Plus/4 version was also created,
+lacking only the sound and sprite words.
+(the following are claimed to be doc files, but I was not able to connect)
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/blazinforth.doc
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/blazinforth.arc
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/blazin64.zip
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/blazinp4.zip
+
+VIC FORTH [VIC cart] (Datatronic) (Tom Zimmer 1982?? HES?)
+FIG FORTH implementation with editor, compiler and interpreter.
+Includes disk, I/O and cassette support and an assembler. VIC version
+of C64 FORTH.
+http://ftp.funet.fi/pub/cbm/vic20/programming/VIC-Forth/Manual.txt
+http://project64.c64.org/misc/datforth.zip
+
+C64 FORTH [C64 cart] (Datatronic) (date unknown - after 1982)
+FIG FORTH implementation with editor, compiler, interpreter and
+assembler. Expanded version of VIC FORTH for the C64 which includes
+disk, I/O and cassette support.
+
+FORTH [C64,PET] (1982, LC. Cargile and Michael Riley, A B Computers)
+FIG FORTH with FORTH 79 standard extensions. Full screen editor.
+Metacompiler available separately for producing a compact run-time
+version of a program. Floating point support available separately.
+
+Super FORTH 64 [C64] (1983, Elliot B. Schneider, Parsec Research)
+MVP-FORTH/FORTH 79 superset. Includes full screen editor, split screen
+display, interpreter and compiler, sound, graphics, turtle graphics,
+sprite, disk and kernel routines, floating point math, interrupt
+routines, conditional macro assembler. Includes sprite editor.
+Artificial intelligence expert systems development module available
+separately.
+
+Tiny FORTH-64 [C64] (1983, Abacus Software)
+FIG FORTH implementation.
+
+Tri FORTH [C64] (1983, International Tri Micro)
+FIG FORTH implementation with extensions.
+
+UNIFORTH [VIC] (1984, Unified Software Systems)
+Enhanced FORTH-79 with strings, arrays, etc., full macro assembler,
+video editor, complete DOS interface, primitive disk utility,
+IEEE-compatible floating point with all trig functions, single-step
+tracing, decompiler, text file support, vectored I/O.
+
+Sixty FORTH [C64] (1984, Elcomp Publishing Inc.)
+Extended FIG FORTH.
+
+White Lightning [C64] (1984, Oasis Software)
+"White Lightning is a complete games writing system comprising of a
+high level, FORTH based, multi-tasking games writing language and a
+powerful Sprite Generator Program. Without doubt, White Lightning's
+most innovative feature is its use of interrupts to effectively run
+two program at once." (description of the Sinclair version).
+"Ideal" subset of FIG-FORTH, but allowed intermixing of BASIC
+Lightning and FORTH commands to produce fast hybrid code. Support for
+scrolling, raster effects (256 sprites), etc. Includes a sprite
+designer, sprite library, BASIC Lightning, and a compiler that can
+produce standalone executables. Adds over 250 commands to BASIC.
+Popular in the UK and spawned several user groups.
+
+FORTH-64 Language [C64] (1985, Abacus Software)
+FORTH 79 with some FORTH 83 extensions. Includes full-screen editor,
+complete FORTH-style assembler, programming tools. Includes hires and
+lores graphics and sound words.
+
+Master FORTH [C64] (1986, MicroMotion)
+Follows the FORTH-83 standard; includes graphics system.
+
+Enhanced FORTH [C64] (1986, Accelerated Software)
+Follows FIG FORTH standard.
+
+geoFORTH [C64 GEOS] (© 1989 Nicholas Vrtis)
+Version of FIG FORTH which runs under GEOS.
+(the following are claimed to be doc files, but I was not able to connect)
+ftp://ftp.forth.org/pub/Forth/Archive/commodore64/geoforth.doc
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/geoforth.doc
+ftp://ftp.forth.org/pub/Forth/Compilers/native/misc/commodore64/geoforth.arc
+
+Laser Genius [C64] (Date unknown - before 1986)
+(David Hunter, Martin Lewis and Andrew Foord, Oasis Software)
+Assembler with syntax-checking editor. Monitor with over 70 commands
+included. Supports "the analyser" with intelligent breakpoints to slow
+or stop the execution of a program, controlled by a tiny subset of
+FORTH language commands.
+http://home.freeuk.net/markk/CBM/Laser_Genius.readme
+http://home.freeuk.net/markk/CBM/Laser_Genius.tar.gz
+
+
+
+-- 
+Guy Macon, Electronics Engineer & Project Manager for hire. 
+Remember Doc Brown from the _Back to the Future_ movies? Do you 
+have an "impossible" engineering project that only someone like 
+Doc Brown can solve?  My resume is at http://www.guymacon.com/ 
+
+
+
+Article: 101471 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeeder1.noc.eunet-ag.at!news.eunet.at!feed.news.tiscali.de!tiscali!newsfeed1.ip.tiscali.net!proxad.net!postnews2.google.com!not-for-mail
+From: astrobe@netcourrier.com (Astrobe)
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: 18 Jun 2004 08:52:41 -0700
+Organization: http://groups.google.com
+Lines: 18
+Message-ID: <b2ebfb5f.0406180752.d8a3853@posting.google.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at>
+NNTP-Posting-Host: 193.251.92.82
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Trace: posting.google.com 1087573961 28769 127.0.0.1 (18 Jun 2004 15:52:41 GMT)
+X-Complaints-To: groups-abuse@google.com
+NNTP-Posting-Date: Fri, 18 Jun 2004 15:52:41 +0000 (UTC)
+Xref: tunews.univie.ac.at comp.lang.forth:101471
+
+Implementation: 4IM
+Implements: itself
+Project-start: 2002-10
+Contains-code-from: (nihil)
+Inspired-by: Pygmy
+Inspired-by: cmForth
+Reference: http://membres.lycos.fr/astrobe
+Release: 2002-10
+Release: 2003-04
+Release: 2003-06
+Release: 2003-11
+Release: 2004-01
+Release: 2004-06
+
+( Just kiddin' )
+
+ Amicalement,
+  Astrobe
+
+
+Article: 101502 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.glorb.com!border1.nntp.dca.giganews.com!nntp.giganews.com!ngpeer.news.aol.com!news.compuserve.com!news-master.compuserve.com!not-for-mail
+From: Krishna Myneni <krishnamyneni@compuserve.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree
+Date: Sat, 19 Jun 2004 21:32:29 -0700
+Organization: CompuServe Interactive Services
+Lines: 34
+Message-ID: <cb2sis$q22$1@ngspool-d02.news.aol.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at>
+NNTP-Posting-Host: atl-tgn-yer-vty5.as.wcom.net
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Trace: ngspool-d02.news.aol.com 1087698332 26690 216.192.177.5 (20 Jun 2004 02:25:32 GMT)
+X-Complaints-To: newsmaster@compuserve.com
+NNTP-Posting-Date: Sun, 20 Jun 2004 02:25:32 +0000 (UTC)
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7b) Gecko/20040316
+X-Accept-Language: en-us, en
+In-Reply-To: <2004Jun18.071304@mips.complang.tuwien.ac.at>
+Xref: tunews.univie.ac.at comp.lang.forth:101502
+
+Anton Ertl wrote:
+> ...
+> So maybe we should document the Forth family tree, too.  I'll make a
+> start.  ...
+> Here's an entry for Gforth (you don't need to be as elaborate as that,
+> but having dates would be helpful):
+> 
+> Implementation: Gforth
+> Implements: ANS Forth
+> Project-start: 1992-07
+> Contains-code-from: bigForth 1993
+> Inspired-by: fig-Forth
+> Inspired-by: F83
+> Reference: http://www.complang.tuwien.ac.at/forth/gforth/Docs-html/Origin.html
+> Release: 0.2 1996-12
+> Release: 0.3 1997-04
+> Release: 0.4 1998-12
+> Release: 0.5 2000-09
+> Release: 0.6 2003-03
+> Reference: http://www.complang.tuwien.ac.at/forth/gforth/old/
+> 
+> - anton
+
+
+Implementation: kForth
+Implements: ANS Forth subset + special features (dynamic type checking, 
+dynamically allocated dictionary, deferred execution)
+Project-start: 1995, as an embedded interpreter for the program xyplot
+Contains-code-from: No prior program.
+Inspired-by: LMI UR/Forth
+Reference: http://www.ccreweb.org/software/kforth/kforth.html
+Release: see http://www.ccreweb.org/software/kforth/revisions.html
+Reference: Forthwrite article, "Special Features of kForth",
+            issues 116 and 117, 2002.
+
+
+Article: 101649 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.glorb.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.wispertel.com!news.wispertel.com.POSTED!not-for-mail
+NNTP-Posting-Date: Fri, 25 Jun 2004 16:58:18 -0500
+Message-ID: <40DC9FF8.4080903@whispertel.LoseTheH.net>
+Date: Fri, 25 Jun 2004 15:58:16 -0600
+From: John Doty <jpd@whispertel.LoseTheH.net>
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.0.1) Gecko/20030208 Netscape/7.0 (CK-MIT)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Lines: 39
+NNTP-Posting-Host: 38.116.140.86
+X-Trace: sv3-xcHFv0T/uNbrT1W8Miv4O2zl6LHJwNdETtG2Y3A0o1KCX8al0emqWvBEJ2NUaEeafO+BNkcam3nSe1S!DJIOaMrJOw49ASth+6iWOSkMGQ++aZi4i4z9UplBqG7qXOu8l2chX8zef2fO3RDYwGLrJ0w6bQq+!enE+D4Zwa+UnO0k3lbo=
+X-Complaints-To: abuse@wispertel.com
+X-DMCA-Complaints-To: abuse@wispertel.com
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.1
+Xref: tunews.univie.ac.at comp.lang.forth:101649
+
+Anton Ertl wrote:
+
+> So maybe we should document the Forth family tree, too.  I'll make a
+> start.  To avoid discussions of whether something constitutes a
+> separate language/dialect/variant/whatever, let's just document all
+> the implementations and standards there are.  Just send me entries
+> like the one below, and I will try to create a family tree from that.
+
+A Forth clan from Cambridge, Massachusetts (I hope my memory is good here):
+
+Implementation: STOIC
+Implements: STOIC
+Project-start: 1975?
+Inspired-by: Moore's early 70's Forth
+Hardware: Data General Nova/Eclipse
+Author: Jonathan Sachs
+Note: Execution of compiled code at line end instead of word by word 
+interpretation.
+Note: An early version was called "FIFTH"
+
+Implementation: LSE
+Implements: LSE
+Project-start: 1978?
+Inspired-by: STOIC
+Hardware: RCA 1802
+Author: Robert Goeke
+Note: Early versions were called "STOIC", although the language is much 
+simpler than Sachs' STOIC.
+
+Implementation: MAGIC/L
+Implements: MAGIC/L
+Project-start: 1978?
+Inspired-by: STOIC
+Author: Arnold Epstein
+Note: Incrementally-compiled PASCAL-like language based on a STOIC-like 
+threaded code VM, and bootstrapped via an RPN layer.
+
+-jpd
+
+
+
+Article: 101820 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!in.100proofnews.com!in.100proofnews.com!cycny01.gnilink.net!cyclone1.gnilink.net!gnilink.net!wns13feed!worldnet.att.net!attbi_s01.POSTED!53ab2750!not-for-mail
+Message-ID: <40E7406A.2110AAAB@comcast.net>
+From: m-coughlin <m-coughlin@comcast.net>
+X-Mailer: Mozilla 4.79 (Macintosh; U; PPC)
+X-Accept-Language: en
+MIME-Version: 1.0
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <40DC9FF8.4080903@whispertel.LoseTheH.net>
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Lines: 33
+NNTP-Posting-Host: 24.128.50.116
+X-Complaints-To: abuse@comcast.net
+X-Trace: attbi_s01 1088897101 24.128.50.116 (Sat, 03 Jul 2004 23:25:01 GMT)
+NNTP-Posting-Date: Sat, 03 Jul 2004 23:25:01 GMT
+Organization: Comcast Online
+Date: Sat, 03 Jul 2004 23:25:02 GMT
+Xref: tunews.univie.ac.at comp.lang.forth:101820
+
+John Doty wrote:
+
+[snip]
+ 
+> A Forth clan from Cambridge, Massachusetts (I hope my memory
+> is good here):
+> 
+> Implementation: STOIC
+> Implements: STOIC
+> Project-start: 1975?
+> Inspired-by: Moore's early 70's Forth
+> Hardware: Data General Nova/Eclipse
+> Author: Jonathan Sachs
+> Note: Execution of compiled code at line end instead of word by
+> word interpretation.
+> Note: An early version was called "FIFTH"
+
+[snip]
+
+     STOIC started out at MIT and Harvard in biomedical
+engineering in Boston. It was running on the Z80 and CP/M. Later
+it was ported to the DEC VAX under VMS by Roger Hauck and was
+distributed by DECUS.
+
+      There used to be code available for download on the web.
+Here is a little snippet of it.
+http://www.znode51.de/pcwworld/l107/user_1/stoicfle.stc
+
+   A more complete copy can be found if there are any CP/M
+archives left anywhere.
+
+--
+Michael Coughlin    m-coughlin@comcast.net   Cambridge, MA USA
+
+
+Article: 101823 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.glorb.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.wispertel.com!news.wispertel.com.POSTED!not-for-mail
+NNTP-Posting-Date: Sat, 03 Jul 2004 22:03:56 -0500
+Message-ID: <40E7739A.2000906@whispertel.LoseTheH.net>
+Date: Sat, 03 Jul 2004 21:03:54 -0600
+From: John Doty <jpd@whispertel.LoseTheH.net>
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.0.1) Gecko/20030208 Netscape/7.0 (CK-MIT)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <40DC9FF8.4080903@whispertel.LoseTheH.net> <40E7406A.2110AAAB@comcast.net>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Lines: 21
+NNTP-Posting-Host: 38.116.140.86
+X-Trace: sv3-H14a/KpvnqGhNGAB4S3n6iByfoA6f6v04u88miN/m+1TVDk5+qK63t/QnqvsHDEIsQU0YUW8OsstevC!EndBEqMsG9/KOiuJOExlLxCqmxFU3rKmEISwYGe2mOftWdwnKKwAnwv4uDD8MeHSyFYbuDtZ/jUp!CPnBDHEfbZKCQwx2X7g=
+X-Complaints-To: abuse@wispertel.com
+X-DMCA-Complaints-To: abuse@wispertel.com
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.1
+Xref: tunews.univie.ac.at comp.lang.forth:101823
+
+m-coughlin wrote:
+
+ >      STOIC started out at MIT and Harvard in biomedical
+ > engineering in Boston.
+
+Its first application was in biomedical engineering, but Jon Sachs 
+started working on it when he was the programmer for the SAS-3 x-ray 
+astronomy spacecraft at MIT (I was there: Jon's working notebook 
+included all of the info he could find on Chuck Moore's Forth).
+
+ > It was running on the Z80 and CP/M. Later
+ > it was ported to the DEC VAX under VMS by Roger Hauck and was
+ > distributed by DECUS.
+
+The original hardware (mid '70's) was Data General stuff. The CP/M port 
+must have been later. I know nothing of the CP/M port, nor of Roger's 
+VAX port, although I got to know Roger later. Unfortunately, Roger has 
+passed away.
+
+-jpd
+
+
+
+Article: 101650 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.glorb.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.wispertel.com!news.wispertel.com.POSTED!not-for-mail
+NNTP-Posting-Date: Fri, 25 Jun 2004 16:58:18 -0500
+Message-ID: <40DC9FF8.4080903@whispertel.LoseTheH.net>
+Date: Fri, 25 Jun 2004 15:58:16 -0600
+From: John Doty <jpd@whispertel.LoseTheH.net>
+User-Agent: Mozilla/5.0 (Macintosh; U; PPC Mac OS X; en-US; rv:1.0.1) Gecko/20030208 Netscape/7.0 (CK-MIT)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Lines: 39
+NNTP-Posting-Host: 38.116.140.86
+X-Trace: sv3-xcHFv0T/uNbrT1W8Miv4O2zl6LHJwNdETtG2Y3A0o1KCX8al0emqWvBEJ2NUaEeafO+BNkcam3nSe1S!DJIOaMrJOw49ASth+6iWOSkMGQ++aZi4i4z9UplBqG7qXOu8l2chX8zef2fO3RDYwGLrJ0w6bQq+!enE+D4Zwa+UnO0k3lbo=
+X-Complaints-To: abuse@wispertel.com
+X-DMCA-Complaints-To: abuse@wispertel.com
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.1
+Xref: tunews.univie.ac.at comp.lang.forth:101650
+
+Anton Ertl wrote:
+
+> So maybe we should document the Forth family tree, too.  I'll make a
+> start.  To avoid discussions of whether something constitutes a
+> separate language/dialect/variant/whatever, let's just document all
+> the implementations and standards there are.  Just send me entries
+> like the one below, and I will try to create a family tree from that.
+
+A Forth clan from Cambridge, Massachusetts (I hope my memory is good here):
+
+Implementation: STOIC
+Implements: STOIC
+Project-start: 1975?
+Inspired-by: Moore's early 70's Forth
+Hardware: Data General Nova/Eclipse
+Author: Jonathan Sachs
+Note: Execution of compiled code at line end instead of word by word 
+interpretation.
+Note: An early version was called "FIFTH"
+
+Implementation: LSE
+Implements: LSE
+Project-start: 1978?
+Inspired-by: STOIC
+Hardware: RCA 1802
+Author: Robert Goeke
+Note: Early versions were called "STOIC", although the language is much 
+simpler than Sachs' STOIC.
+
+Implementation: MAGIC/L
+Implements: MAGIC/L
+Project-start: 1978?
+Inspired-by: STOIC
+Author: Arnold Epstein
+Note: Incrementally-compiled PASCAL-like language based on a STOIC-like 
+threaded code VM, and bootstrapped via an RPN layer.
+
+-jpd
+
+
+
+Article: 102283 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!news-spur1.maxwell.syr.edu!news.maxwell.syr.edu!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.vel.net!news.vel.net.POSTED!not-for-mail
+NNTP-Posting-Date: Mon, 02 Aug 2004 18:53:38 -0500
+Reply-To: "Elizabeth D Rather" <erather@forth.com>
+From: "Elizabeth D Rather" <erather@forth.com>
+Newsgroups: comp.lang.forth
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at>
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Mon, 2 Aug 2004 16:57:40 -0700
+Organization: FORTH, Inc.
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Message-ID: <fMmdneDVgd-fSZPcRVn-jA@vel.net>
+Lines: 63
+NNTP-Posting-Host: 207.182.228.10
+X-Trace: sv3-CZhJAtWrqu4UClBNgzm/EzI9/SpAuTKHG0kKx/ZaP2CzY4YX9rh7uxMgUjNFvsuHmaMDyKEeFq9Vuen!GMYvYIKdWwOhh0s/gc+LZBJDiOT1nq8P2wzhhcYr8Tb5pk3u4qDwc1i+FDTqFQMaTA==
+X-Complaints-To: abuse@vel.net
+X-DMCA-Complaints-To: abuse@vel.net
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.3.13
+Xref: tunews.univie.ac.at comp.lang.forth:102283
+
+"Anton Ertl" <anton@mips.complang.tuwien.ac.at> wrote in message
+news:2004Aug2.202627@mips.complang.tuwien.ac.at...
+> anton@mips.complang.tuwien.ac.at (Anton Ertl) writes (on June 18th):
+> >So maybe we should document the Forth family tree, too.  I'll make a
+> >start.  To avoid discussions of whether something constitutes a
+> >separate language/dialect/variant/whatever, let's just document all
+> >the implementations and standards there are.  Just send me entries
+> >like the one below, and I will try to create a family tree from that.
+>
+> Ok, the first draft of the family tree can be found at
+>
+> http://www.complang.tuwien.ac.at/forth/family-tree/
+>
+> This incorporates all the information that has been posted here, plus
+> the pedigree information of Gforth from
+...
+> Now for the input: Here you see the description of an implementation
+> and where it is coming from (with all three kinds of edges):
+>
+> Implementation Gforth
+> Gforth implements Forth94
+> BigForth begot Gforth
+> figForth inspired Gforth
+> F83 inspired Gforth
+>
+> If your Implementation has a name containing spaces, dashes, or
+> somesuch, you have to define the implementation like this:
+>
+> s" LMI UR-Forth" name-implementation urforth
+>
+> Send me any additional historical information (in particular, dates)
+> in comments (starting with "\ ").
+
+Good idea!  Here's a FORTH, Inc. compilation
+(assuming I've guessed right about the usage of these words):
+
+Implementation Forth                         \ NRAO 1972
+Forth implements miniFORTH            \ FORTH, Inc. 1973-5
+Forth implements microFORTH         \ FORTH, Inc. 1977
+miniFORTH begot polyFORTH        \ FORTH, Inc., approx. 1980
+microFORTH inspired chipFORTH  \ FORTH, Inc. & Computer Solutions, mid-80's
+polyFORTH implements chipFORTH
+polyFORTH begot SwiftForth          \ 1996-7
+chipFORTH inspired SwiftX
+SwiftForth implements SwiftX          \ 1997
+
+Cheers,
+Elizabeth
+
+
+-- 
+==================================================
+Elizabeth D. Rather   (US & Canada)   800-55-FORTH
+FORTH Inc.                         +1 310-491-3356
+5155 W. Rosecrans Ave. #1018  Fax: +1 310-978-9454
+Hawthorne, CA 90250
+http://www.forth.com
+
+"Forth-based products and Services for real-time
+applications since 1973."
+==================================================
+
+
+
+
+Article: 102293 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!news-spur1.maxwell.syr.edu!news.maxwell.syr.edu!border1.nntp.dca.giganews.com!nntp.giganews.com!newsread.com!newsstand.newsread.com!POSTED.monger.newsread.com!not-for-mail
+From: Doug Hoffman <dhoffman@journey.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at>
+User-Agent: MT-NewsWatcher/3.4 (PPC Mac OS X)
+Message-ID: <dhoffman-A02518.05295403082004@journey.net.client.newsread.com>
+Lines: 19
+Date: Tue, 03 Aug 2004 09:30:01 GMT
+NNTP-Posting-Host: 207.241.134.182
+X-Complaints-To: Abuse Role <abuse@journey.net>, We Care <abuse@newsread.com>
+X-Trace: monger.newsread.com 1091525401 207.241.134.182 (Tue, 03 Aug 2004 05:30:01 EDT)
+NNTP-Posting-Date: Tue, 03 Aug 2004 05:30:01 EDT
+Organization: Journey Communications (journey.net)
+Xref: tunews.univie.ac.at comp.lang.forth:102293
+
+Implementation MacForth \ Creative Solutions 1984, First Forth for Mac
+MacForth begot MacForth+ \ Creative Solutions 1987?  Supported new Roms
+MacForth+ begot PowerMacForth \ MegaWolf Date?
+SmalltalkandForth inspired Neon \ Kriya Systems 1985  Charles Duff OOP
+Neon begat Yerk \ Bob Loewenstein Date?  Controlling Observatory 
+telescope
+Neon inspired Mops \ Mike Hore Date? Subroutine Threading, Optimizing 
+Compiler
+Mops begat PowerMops \ Mike Hore Date? PowerPC native code, OSX Native 
+Code Date?
+Implementation MachForth \ Company?  Date? Subroutine Threading
+Flint inspired Pocket Forth \ Chris Heilman Date?  Extreme Minimalism
+
+
+Incomplete but better than nothing (Macintosh).
+
+Regards,
+
+-Doug
+
+
+Article: 102296 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!195.185.185.44.MISMATCH!feed.news.tiscali.de!news.belwue.de!news.uni-stuttgart.de!carbon.eu.sun.com!btnet-feed5!btnet!news.btopenworld.com!not-for-mail
+From: "Alex McDonald" <alex_mcd@btopenworld.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Tue, 3 Aug 2004 11:37:25 +0000 (UTC)
+Organization: BT Openworld
+Lines: 42
+Message-ID: <centdl$21k$1@hercules.btinternet.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at>
+NNTP-Posting-Host: host213-122-9-134.in-addr.btopenworld.com
+X-Trace: hercules.btinternet.com 1091533045 2100 213.122.9.134 (3 Aug 2004 11:37:25 GMT)
+X-Complaints-To: news-complaints@lists.btinternet.com
+NNTP-Posting-Date: Tue, 3 Aug 2004 11:37:25 +0000 (UTC)
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MSMail-Priority: Normal
+X-Priority: 3
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Xref: tunews.univie.ac.at comp.lang.forth:102296
+
+"Anton Ertl" <anton@mips.complang.tuwien.ac.at> wrote in message
+news:2004Aug2.202627@mips.complang.tuwien.ac.at...
+> anton@mips.complang.tuwien.ac.at (Anton Ertl) writes (on June 18th):
+> >So maybe we should document the Forth family tree, too.  I'll make a
+> >start.  To avoid discussions of whether something constitutes a
+> >separate language/dialect/variant/whatever, let's just document all
+> >the implementations and standards there are.  Just send me entries
+> >like the one below, and I will try to create a family tree from that.
+===snipped
+>
+> Send me any additional historical information (in particular, dates)
+> in comments (starting with "\ ").
+>
+
+Implementation F-PC \ ? nothing known by me; TJZ public domain
+fig-FORTH begot F-PC \ ?
+
+Implementation TCOM \ ? nothing known by me; TJZ
+F-PC begot TCOM
+
+Implementation Win32Forth \ Andrew McKewan, Robert Smith, Y.T. Lin, Andy
+Corsack, Jim Schneider; mid 1994; WinNT
+Unknown inspired Win32Forth \ Andrew McKewan; 1994; ? anyone know? F-83?
+F-PC?
+Win32Forth implements Forth94
+F-PC begot Win32Forth \ Tom Zimmer; 1994
+F83 inspired Win32Forth \ Andrew McKewan; 1996; meta compilation
+Yerk inspired Win32Forth \ Andrew McKewan; 1996; OO support
+
+Entries above depend on Doug Hoffman's additions.
+
+As to inspired; TJZ added 1000s of words -- most forths inspired him I
+guess.
+
+-- 
+Regards
+Alex McDonald
+Andrew McKewan, Robert Smith and I were the primary contributors, followed
+by Y.T. Lin, and Andy Corsack. Later I talked Jim Schneider into writing a
+full 486 assembler, which he donated, completing the system.
+
+
+
+
+Article: 102308 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!news-spur1.maxwell.syr.edu!news.maxwell.syr.edu!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.vel.net!news.vel.net.POSTED!not-for-mail
+NNTP-Posting-Date: Tue, 03 Aug 2004 13:11:06 -0500
+Reply-To: "Elizabeth D Rather" <erather@forth.com>
+From: "Elizabeth D Rather" <erather@forth.com>
+Newsgroups: comp.lang.forth
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <fMmdneDVgd-fSZPcRVn-jA@vel.net> <2004Aug3.072507@mips.complang.tuwien.ac.at>
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Tue, 3 Aug 2004 11:15:13 -0700
+Organization: FORTH, Inc.
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Message-ID: <DPydnSdNmvSnSJLcRVn-qQ@vel.net>
+Lines: 89
+NNTP-Posting-Host: 207.182.228.10
+X-Trace: sv3-qj39JU7ifWd2krzHLfrbppYb8WnsvOhDDXTkhjiZ1sZrjEooI0WV51QfLgJs70PFcBr9txkwCdQ2rNY!o2BKGYGDZSHx63d7H0j+C6BO4iAnh78jfAZoVKCDGetXpepoOdQDewY/R1oTOJ6Evw==
+X-Complaints-To: abuse@vel.net
+X-DMCA-Complaints-To: abuse@vel.net
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.3.13
+Xref: tunews.univie.ac.at comp.lang.forth:102308
+
+"Anton Ertl" <anton@mips.complang.tuwien.ac.at> wrote in message
+news:2004Aug3.072507@mips.complang.tuwien.ac.at...
+> Thank you.  You apparently guessed wrongly for IMPLEMENTS.  It
+> should be used as:
+>
+> <Implementation> implements <standard>
+>
+> but I have now renamed IMPLEMENTS to CONFORMS-TO, which is hopefully
+> less confusing.
+>
+> And here are explanations for the other words:
+>
+> \ a significant amount of code from implementation1 was originally
+> \ in implementation2
+> <implementation1> begot <implementation2>
+>
+> \ word specs from something1 were implemented/standardized in something2
+> <something1> inspired <something2>
+
+Hmm, I was guessing that "inspired" meant concepts in 1 were implemented in
+2.
+
+> What did you want to express with IMPLEMENTS?
+
+That 1 was used to develop 2.  polyFORTH was used to develop the host side
+of chipFORTH, and SwiftForth was used as the basis for the host side of
+SwiftX.
+
+> In any case, this is how I adapted your data:
+>
+> \ from Elizabeth Rather
+> \ Implementation Forth                         \ NRAO 1972
+> \ Forth implements miniFORTH            \ FORTH, Inc. 1973-5
+> \ Forth implements microFORTH         \ FORTH, Inc. 1977
+> Implementation miniFORTH
+> Implementation polyFORTH
+> miniFORTH begot polyFORTH        \ FORTH, Inc., approx. 1980
+
+Correct date for polyFORTH is 1982.
+
+> Implementation chipFORTH
+> microFORTH inspired chipFORTH  \ FORTH, Inc. & Computer Solutions,
+mid-80's
+> \ polyFORTH implements chipFORTH
+> Implementation SwiftForth
+> SwiftForth conforms-to Forth94
+> polyFORTH begot SwiftForth          \ 1996-7
+> Implementation SwiftX
+> chipFORTH inspired SwiftX
+> \ SwiftForth implements SwiftX          \ 1997
+>
+> Of course, this misses connections between the
+> miniForth-polyForth-SwiftForth chain and the
+> FORTH-microFORTH-chipFORTH-SwiftX chain,
+
+I had assumed that "begot" was intended to represent these generational
+relationships.
+
+> ...and also some informations
+> about standards conformance (I guess there have been versions of
+> polyFORTH conforming to Forth-79, Forth-83, and ANS Forth, but I would
+> like your confirmation for this).
+
+As far as standards conformance is concerned, Forth-79 was such an
+incomplete and contradictory "standard" that I doubt anyone can fully claim
+conformance to it.  polyFORTH was very close to Forth-83, and had an
+optional compatibility suite for the non-conforming bits.  This unhappy
+state of affairs came about because Forth-83 was done in two meetings; the
+design of pF was finalized between the first and second, and conformed to
+all the "firm decisions" taken in the first meeting.  But some of those were
+reversed in the 2nd meeting, and that created too many incompatibilities for
+us to follow.  SwiftForth conforms to ANS Forth.
+
+Cheers,
+Elizabeth
+
+-- 
+==================================================
+Elizabeth D. Rather   (US & Canada)   800-55-FORTH
+FORTH Inc.                         +1 310-491-3356
+5155 W. Rosecrans Ave. #1018  Fax: +1 310-978-9454
+Hawthorne, CA 90250
+http://www.forth.com
+
+"Forth-based products and Services for real-time
+applications since 1973."
+==================================================
+
+
+
+
+Article: 102298 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!news-fra1.dfn.de!news2.telebyte.nl!npeer.de.kpn-eurorings.net!news.mediascape.de!zen.net.uk!demorgan.zen.co.uk!194.72.9.35.MISMATCH!news-peer1!btnet-feed5!btnet!news.btopenworld.com!not-for-mail
+From: "George Hubert" <george@tvhifi-microtec.co.uk>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Tue, 3 Aug 2004 12:34:47 +0000 (UTC)
+Organization: BT Openworld
+Lines: 56
+Message-ID: <ceo0p7$a0p$1@sparta.btinternet.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <centdl$21k$1@hercules.btinternet.com>
+NNTP-Posting-Host: host81-130-203-160.in-addr.btopenworld.com
+X-Trace: sparta.btinternet.com 1091536487 10265 81.130.203.160 (3 Aug 2004 12:34:47 GMT)
+X-Complaints-To: news-complaints@lists.btinternet.com
+NNTP-Posting-Date: Tue, 3 Aug 2004 12:34:47 +0000 (UTC)
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MSMail-Priority: Normal
+X-Priority: 3
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Xref: tunews.univie.ac.at comp.lang.forth:102298
+
+
+"Alex McDonald" <alex_mcd@btopenworld.com> wrote in message
+news:centdl$21k$1@hercules.btinternet.com...
+> "Anton Ertl" <anton@mips.complang.tuwien.ac.at> wrote in message
+> news:2004Aug2.202627@mips.complang.tuwien.ac.at...
+> > anton@mips.complang.tuwien.ac.at (Anton Ertl) writes (on June 18th):
+
+    -<snip>-
+
+>
+> Implementation F-PC \ ? nothing known by me; TJZ public domain
+> fig-FORTH begot F-PC \ ?
+>
+> Implementation TCOM \ ? nothing known by me; TJZ
+> F-PC begot TCOM
+
+I think TCOM was just a target compiler running under F-PC for producing
+.COM based executables, rather than a seperate Forth
+
+> Implementation Win32Forth \ Andrew McKewan, Robert Smith, Y.T. Lin, Andy
+> Corsack, Jim Schneider; mid 1994; WinNT
+> Unknown inspired Win32Forth \ Andrew McKewan; 1994; ? anyone know? F-83?
+> F-PC?
+
+I would say F-PC and FIG
+
+> Win32Forth implements Forth94
+> F-PC begot Win32Forth \ Tom Zimmer; 1994
+> F83 inspired Win32Forth \ Andrew McKewan; 1996; meta compilation
+
+I think it was TCOM that inspired/begot the meta compiler
+
+> Yerk inspired Win32Forth \ Andrew McKewan; 1996; OO support
+
+and the Locals ( I think the date should 1994 the same as the main system ).
+
+>
+> Entries above depend on Doug Hoffman's additions.
+>
+> As to inspired; TJZ added 1000s of words -- most forths inspired him I
+> guess.
+
+Most of those words were from F-PC and his earlier FIG systems IIRC
+
+>
+> -- 
+> Regards
+> Alex McDonald
+> Andrew McKewan, Robert Smith and I were the primary contributors, followed
+> by Y.T. Lin, and Andy Corsack. Later I talked Jim Schneider into writing a
+> full 486 assembler, which he donated, completing the system.
+>
+
+George Hubert
+
+
+
+
+Article: 102323 of comp.lang.forth
+From: stephenXXX@INVALID.mpeltd.demon.co.uk (Stephen Pelc)
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 04 Aug 2004 08:58:13 GMT
+Organization: MPE
+Lines: 17
+Message-ID: <4110a43d.591140234@192.168.0.1>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <centdl$21k$1@hercules.btinternet.com>
+Reply-To: stephenXXX@INVALID.mpeltd.demon.co.uk
+NNTP-Posting-Host: mpeltd.demon.co.uk
+X-Trace: news.demon.co.uk 1091611960 8942 158.152.46.91 (4 Aug 2004 09:32:40 GMT)
+X-Complaints-To: abuse@demon.net
+NNTP-Posting-Date: Wed, 4 Aug 2004 09:32:40 +0000 (UTC)
+To: comp.lang.forth
+X-Newsreader: Forte Free Agent 1.21/32.243
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!newsfeed01.sul.t-online.de!newsfeedt0.toon.t-online.de!newsfeed00.sul.t-online.de!t-online.de!news.zanker.org!news.amigo.co.uk!news.clara.net!wagner.news.clara.net!194.159.246.34.MISMATCH!peer-uk.news.demon.net!kibo.news.demon.net!news.demon.co.uk!demon!mpeltd.demon.co.uk!anonymous
+Xref: tunews.univie.ac.at comp.lang.forth:102323
+
+On Tue, 3 Aug 2004 11:37:25 +0000 (UTC), "Alex McDonald"
+<alex_mcd@btopenworld.com> wrote:
+
+>Implementation Win32Forth \ Andrew McKewan, Robert Smith, Y.T. Lin, Andy
+>Corsack, Jim Schneider; mid 1994; WinNT
+>Unknown inspired Win32Forth \ Andrew McKewan; 1994; ? anyone know? F-83?
+
+MPE_ProForth_for_Windows_v1.0 inspired Win32Forth
+\ Right down to the bugs in the assembler
+
+Stephen
+--
+Stephen Pelc, stephenXXX@INVALID.mpeltd.demon.co.uk
+MicroProcessor Engineering Ltd - More Real, Less Time
+133 Hill Lane, Southampton SO15 5AF, England
+tel: +44 (0)23 8063 1441, fax: +44 (0)23 8033 9691
+web: http://www.mpeltd.demon.co.uk - free VFX Forth downloads
+
+
+Article: 102344 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!195.185.185.44.MISMATCH!feed.news.tiscali.de!tiscali!newsfeed1.ip.tiscali.net!proxad.net!proxad.net!194.159.246.34.MISMATCH!peer-uk.news.demon.net!kibo.news.demon.net!news.demon.co.uk!demon!mpeltd.demon.co.uk!anonymous
+From: stephenXXX@INVALID.mpeltd.demon.co.uk (Stephen Pelc)
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 04 Aug 2004 18:02:38 GMT
+Organization: MPE
+Lines: 106
+Message-ID: <41112430.623894828@192.168.0.1>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at>
+Reply-To: stephenXXX@INVALID.mpeltd.demon.co.uk
+NNTP-Posting-Host: mpeltd.demon.co.uk
+X-Trace: news.demon.co.uk 1091646057 18839 158.152.46.91 (4 Aug 2004 19:00:57 GMT)
+X-Complaints-To: abuse@demon.net
+NNTP-Posting-Date: Wed, 4 Aug 2004 19:00:57 +0000 (UTC)
+To: comp.lang.forth
+X-Newsreader: Forte Free Agent 1.21/32.243
+Xref: tunews.univie.ac.at comp.lang.forth:102344
+
+Here are the MPE systems from memory. Some dates may be a
+little approximate.
+
+\ Although it was no formal standard, FIG Forth was
+\ influential enough to deserve categorisation as a
+\ standard
+??? ??? s" FIG Forth" standard ForthFIG
+
+1983 ?? implementation WorkForth  \ circa 1983
+\ The first hosted MPE Forth for CPM, MSDOS and so on.
+\ These were 16 bit ITC Forths as far as I can remember.
+  WorkForth implements ForthFIG
+  figForth inspired WorkForth
+
+1985 ?? inplementation PowerForth
+\ Our first Forth 83 product and the basis of a chassis
+\ which lasted until ANS Forth arrived. 16 bit DTC DOS system
+\ with TOS cached.
+  PowerForth implements Forth83
+  WorkForth inspired PowerForth
+  WorkForth begot PowerForth
+
+1987 ?? implementation ModularForth
+\ A derivative of PowerForth with multiple 64k modules.
+  ModularForth implements Forth83
+  PowerForth inspired ModularForth
+  PowerForth begot ModularForth
+
+1988 ?? implementation GemForth
+\ 32 bit version for the Atari ST
+  GemForth implements Forth83
+  PowerForth inspired GemForth
+  PowerForth begot GemForth
+
+1988 ?? s" ProForth for DOS" name-implementation PFD
+\ 32 bit version for DOS
+  PFD implements Forth83
+  PowerForth inspired PFD
+  PowerForth begot PFD
+
+1991 ?? s" ProForth for Windows" name-implementation PFW
+\ 32 bit version for Windows. Released almost simultaneously
+\ with Windows NT v3.1. Version 1.x was soon replaced by
+\ version 2.x.
+  PFW implements Forth83
+  PFD inspired PFW
+  PFD begot PFW
+
+1978 ?? s" UCSD Pascal" name-implementation Pcode \ for reference
+1990 ?? implementation AnsiC    \ for reference
+
+1993 ?? implementation SENDIT
+\ A tokenised Forth VM for byte code interpreters on embedded
+\ network systems. Produced as a deliverable for the EU SENDIT
+\ project, it had both C and Forth compilers.
+  Forth83 inspired SENDIT
+  AnsiC inspired SENDIT
+  Pcode inspired SENDIT
+  Forth83 begot SENDIT
+
+1996 ?? implementation OTA
+\ A SENDIT derivative for payment terminals with C and Forth
+\ compilers. The project is owned by Europay International
+\ (now part of MasterCard). The tool chains were mostly 
+\ developedby MPE. The run-time kernels were mostly developed
+\ by Forth Inc (in Forth), a few by MPE (in Forth) and the C
+\ kernel was written by Rowley Associates as an MPE
+\ subcontractor.
+  OTA implements Forth94
+  SENDIT inspired OTA
+  SENDIT begot VFXW
+
+1997 ?? implementation Practical
+\ Another EU research project in which MPE worked on
+\ JIT compilers for tokenised systems. These formed the
+\ basis of the VFX code generator.
+  SENDIT inspired Practical
+  SENDIT begot Practical
+
+1998 ?? s" VFX Forth for Windows" name-implementation VFXW
+\ 32 bit version for Windows. Only the third Forth chassis 
+\ that MPE has written. A native code ANS system with a
+\ very aggressive code generator. Developed simultaneously
+\ with the VFX cross compilers below.
+  VFXW implements Forth94
+  PFW inspired VFXW
+  PFW begot VFXW
+
+1998 ?? s" VFX Cross Compilers" name-implementation XVFX
+\ The VFX code generator has been ported to produce code
+\ for seven different CPU architectures: i32, H8S, ARM, 68xxx,
+\ Coldfire, 68HC12/9S12, MSP430. Several other CPUs have been
+\ prototyped.
+  XVFX implements Forth94
+  Practical inspired XVFX
+  PFW inspired XVFX
+  PFW begot XVFX
+
+Stephen
+
+--
+Stephen Pelc, stephenXXX@INVALID.mpeltd.demon.co.uk
+MicroProcessor Engineering Ltd - More Real, Less Time
+133 Hill Lane, Southampton SO15 5AF, England
+tel: +44 (0)23 8063 1441, fax: +44 (0)23 8033 9691
+web: http://www.mpeltd.demon.co.uk - free VFX Forth downloads
+
+
+Article: 102333 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!newsfeed01.sul.t-online.de!newsfeed00.sul.t-online.de!t-online.de!news.zanker.org!dedekind.zen.co.uk!zen.net.uk!demorgan.zen.co.uk!194.72.9.35.MISMATCH!news-peer1!btnet-feed5!btnet!news.btopenworld.com!not-for-mail
+From: "Alex McDonald" <alex_mcd@btopenworld.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 4 Aug 2004 15:25:03 +0000 (UTC)
+Organization: BT Openworld
+Lines: 32
+Message-ID: <ceqv4e$av6$2@sparta.btinternet.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <centdl$21k$1@hercules.btinternet.com> <4110a43d.591140234@192.168.0.1>
+NNTP-Posting-Host: host213-122-80-153.in-addr.btopenworld.com
+X-Trace: sparta.btinternet.com 1091633103 11238 213.122.80.153 (4 Aug 2004 15:25:03 GMT)
+X-Complaints-To: news-complaints@lists.btinternet.com
+NNTP-Posting-Date: Wed, 4 Aug 2004 15:25:03 +0000 (UTC)
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MSMail-Priority: Normal
+X-Priority: 3
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Xref: tunews.univie.ac.at comp.lang.forth:102333
+
+"Stephen Pelc" <stephenXXX@INVALID.mpeltd.demon.co.uk> wrote in message
+news:4110a43d.591140234@192.168.0.1...
+> On Tue, 3 Aug 2004 11:37:25 +0000 (UTC), "Alex McDonald"
+> <alex_mcd@btopenworld.com> wrote:
+>
+> >Implementation Win32Forth \ Andrew McKewan, Robert Smith, Y.T. Lin, Andy
+> >Corsack, Jim Schneider; mid 1994; WinNT
+> >Unknown inspired Win32Forth \ Andrew McKewan; 1994; ? anyone know? F-83?
+>
+> MPE_ProForth_for_Windows_v1.0 inspired Win32Forth
+> \ Right down to the bugs in the assembler
+
+Begot? (rather than contributed major parts to, which is what I think Anton
+means?)
+
+TJZ's notes on the development of W32F make it clear that the kernel was
+written in assembler for TASM (Borland) by Andrew McKewan, and that he (TJZ)
+ported quite large chunks of F-PC to it, after rejecting the only 32bit NT
+version available on the market at the time (was it MPE ProForth? The date
+was before mid 1994).
+
+The assembler was written separately by Jim Schneider & completed later
+(dates in 1994 & 1995); TJZ talks of having to persuade Jim to complete the
+assembler. Not having seen MPE ProForth for Windows v1.0, nor it's
+assembler, I can't comment on its provenance, or the commonality of its
+source & bugs. It's also used by the Russian SP-FORTH group.
+
+-- 
+Regards
+Alex McDonald
+
+
+
+
+Article: 102354 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!uninett.no!newsfeed1.eu.ignite.net!newsr1.ipcore.viaginterkom.de!news-peer1!btnet-feed5!btnet!news.btopenworld.com!not-for-mail
+From: "Alex McDonald" <alex_mcd@btopenworld.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Thu, 5 Aug 2004 07:24:44 +0000 (UTC)
+Organization: BT Openworld
+Lines: 28
+Message-ID: <cesnbr$225$1@titan.btinternet.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <centdl$21k$1@hercules.btinternet.com> <4110a43d.591140234@192.168.0.1> <ceqv4e$av6$2@sparta.btinternet.com> <4111705f.643397734@192.168.0.1>
+NNTP-Posting-Host: dial81-131-232-215.in-addr.btopenworld.com
+X-Trace: titan.btinternet.com 1091690684 2117 81.131.232.215 (5 Aug 2004 07:24:44 GMT)
+X-Complaints-To: news-complaints@lists.btinternet.com
+NNTP-Posting-Date: Thu, 5 Aug 2004 07:24:44 +0000 (UTC)
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MSMail-Priority: Normal
+X-Priority: 3
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Xref: tunews.univie.ac.at comp.lang.forth:102354
+
+"Stephen Pelc" <stephenXXX@INVALID.mpeltd.demon.co.uk> wrote in message
+news:4111705f.643397734@192.168.0.1...
+> On Wed, 4 Aug 2004 15:25:03 +0000 (UTC), "Alex McDonald"
+> <alex_mcd@btopenworld.com> wrote:
+>
+> >TJZ's notes on the development of W32F make it clear that the kernel was
+> >written in assembler for TASM (Borland) by Andrew McKewan, and that he
+(TJZ)
+> >ported quite large chunks of F-PC to it, after rejecting the only 32bit
+NT
+> >version available on the market at the time (was it MPE ProForth? The
+date
+> >was before mid 1994).
+>
+> Their employer at the time purchased two copies of ProForth 1.0 with
+> full source code. They wanted some changes done free, and MPE wanted
+> to be paid. The rest is history. The cost to the employer and the
+> time spent was far greater than our quote.
+>
+
+The question of cost is as may be. You appear to be implying that Andrew
+McKewan and/or Tom Zimmer literally copied parts of ProForth?
+
+-- 
+Regards
+Alex McDonald
+
+
+
+
+Article: 102364 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!news-fra1.dfn.de!newsfeed.hanau.net!newsfeed.vmunix.org!npeer.de.kpn-eurorings.net!proxad.net!194.159.246.34.MISMATCH!peer-uk.news.demon.net!kibo.news.demon.net!news.demon.co.uk!demon!mpeltd.demon.co.uk!anonymous
+From: stephenXXX@INVALID.mpeltd.demon.co.uk (Stephen Pelc)
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Thu, 05 Aug 2004 12:38:33 GMT
+Organization: MPE
+Lines: 33
+Message-ID: <41122654.689978750@192.168.0.1>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <centdl$21k$1@hercules.btinternet.com> <4110a43d.591140234@192.168.0.1> <ceqv4e$av6$2@sparta.btinternet.com> <4111705f.643397734@192.168.0.1> <cesnbr$225$1@titan.btinternet.com>
+Reply-To: stephenXXX@INVALID.mpeltd.demon.co.uk
+NNTP-Posting-Host: mpeltd.demon.co.uk
+X-Trace: news.demon.co.uk 1091718052 22870 158.152.46.91 (5 Aug 2004 15:00:52 GMT)
+X-Complaints-To: abuse@demon.net
+NNTP-Posting-Date: Thu, 5 Aug 2004 15:00:52 +0000 (UTC)
+To: comp.lang.forth
+X-Newsreader: Forte Free Agent 1.21/32.243
+Xref: tunews.univie.ac.at comp.lang.forth:102364
+
+On Thu, 5 Aug 2004 07:24:44 +0000 (UTC), "Alex McDonald"
+<alex_mcd@btopenworld.com> wrote:
+
+>The question of cost is as may be. You appear to be implying that Andrew
+>McKewan and/or Tom Zimmer literally copied parts of ProForth?
+
+I didn't say that.
+
+Many of the not so good design decisions of PFW1.0 are present
+in W32F. These decisions were removed in PFW2.x. Most of the
+features of PFW1.x for which source was provided are in W32F.
+Features for which source was not provided are not present
+in W32F.
+
+Having the source code for an existing implementation makes
+life *very* much easier.
+
+VFX Forth is a new chassis from the ground up. Source code
+for certain parts of it, e.g. the optimiser, is only supplied
+under an NDA with some restrictions as to use - "competing
+products" are mentioned. We learn from our mistakes.
+
+Bringing W32F up to date is a worthy goal. However, IMHO,
+the chassis is simply obsolete. Eventually you have to throw
+an old favourite away and bite the bullet of a new chassis.
+
+Stephen
+--
+Stephen Pelc, stephenXXX@INVALID.mpeltd.demon.co.uk
+MicroProcessor Engineering Ltd - More Real, Less Time
+133 Hill Lane, Southampton SO15 5AF, England
+tel: +44 (0)23 8063 1441, fax: +44 (0)23 8033 9691
+web: http://www.mpeltd.demon.co.uk - free VFX Forth downloads
+
+
+Article: 102343 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!newsfeed01.sul.t-online.de!newsfeed00.sul.t-online.de!t-online.de!border2.nntp.dca.giganews.com!border1.nntp.dca.giganews.com!nntp.giganews.com!local1.nntp.dca.giganews.com!nntp.vel.net!news.vel.net.POSTED!not-for-mail
+NNTP-Posting-Date: Wed, 04 Aug 2004 13:57:09 -0500
+Reply-To: "Elizabeth D Rather" <erather@forth.com>
+From: "Elizabeth D Rather" <erather@forth.com>
+Newsgroups: comp.lang.forth
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <fMmdneDVgd-fSZPcRVn-jA@vel.net> <2004Aug3.072507@mips.complang.tuwien.ac.at> <DPydnSdNmvSnSJLcRVn-qQ@vel.net> <2004Aug4.151139@mips.complang.tuwien.ac.at>
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 4 Aug 2004 12:01:11 -0700
+Organization: FORTH, Inc.
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Newsreader: Microsoft Outlook Express 6.00.2800.1437
+X-MIMEOLE: Produced By Microsoft MimeOLE V6.00.2800.1441
+Message-ID: <UP-dnfWBI90YrIzcRVn-pg@vel.net>
+Lines: 61
+NNTP-Posting-Host: 207.182.228.10
+X-Trace: sv3-G9GBPHIvUk0GiHa1Y8bvh/QmPYhZnPEfjOpftD574hNGur0fEzTsk+CAzHfF8GrVQYvMu6X76OA01j9!n31IYDRxCNedeEb9tlRhuLtoTny5ptiHss6RjULpsvp1GNCY1uDOIlHBvZOSR2xkMw==
+X-Complaints-To: abuse@vel.net
+X-DMCA-Complaints-To: abuse@vel.net
+X-Abuse-and-DMCA-Info: Please be sure to forward a copy of ALL headers
+X-Abuse-and-DMCA-Info: Otherwise we will be unable to process your complaint properly
+X-Postfilter: 1.3.13
+Xref: tunews.univie.ac.at comp.lang.forth:102343
+
+"Anton Ertl" <anton@mips.complang.tuwien.ac.at> wrote in message
+news:2004Aug4.151139@mips.complang.tuwien.ac.at...
+...
+> >> What did you want to express with IMPLEMENTS?
+> >
+> >That 1 was used to develop 2.  polyFORTH was used to develop the host
+side
+> >of chipFORTH, and SwiftForth was used as the basis for the host side of
+> >SwiftX.
+>
+> Hmm, I assume this means that significant code of polyForth is in
+> chipForth, and of SwiftForth is in SwiftX, so I added some begot
+> edges.
+
+One way of looking at it is that the chipFORTH host is a polyFORTH
+application, and similarly the SwiftX host is a SwiftForth application.
+
+> Looking at your HOPL-II paper again, I don't see any mention of
+> miniForth there; also microForth was presented there are an ordinary
+> Forth system (and direct predecessor of fig-Forth) rather than a
+> cross-development system like SwiftX (if I understand SwiftX
+> correctly) and presumably chipFORTH.
+
+"miniFORTH" is the product name given to the Forth we developed in the early
+days of FORTH, Inc.  We just called it "Forth" until we developed
+microFORTH, which was so different we needed names for both.
+
+> >> Of course, this misses connections between the
+> >> miniForth-polyForth-SwiftForth chain and the
+> >> FORTH-microFORTH-chipFORTH-SwiftX chain,
+> >
+> >I had assumed that "begot" was intended to represent these generational
+> >relationships.
+>
+> I don't thing that "generational relationship" is precise enough or
+> widely enough applicable to be useful for this chart.
+
+What I'm trying to convey there is an evolving sequence of systems aimed at
+the same basic niche.  miniFORTH, polyFORTH, and SwiftForth are all intended
+for minicomputers or PCs where the development environment is integrated
+with the application.  microFORTH, chipFORTH, and SwiftX are oriented toward
+embedded microcontrollers (and, as you note, the latter two are
+cross-development systems).
+
+Cheers,
+Elizabeth
+
+
+-- 
+==================================================
+Elizabeth D. Rather   (US & Canada)   800-55-FORTH
+FORTH Inc.                         +1 310-491-3356
+5155 W. Rosecrans Ave. #1018  Fax: +1 310-978-9454
+Hawthorne, CA 90250
+http://www.forth.com
+
+"Forth-based products and Services for real-time
+applications since 1973."
+==================================================
+
+
+
+
+Article: 102411 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newscore.univie.ac.at!195.185.185.44.MISMATCH!feed.news.tiscali.de!newsfeed.icl.net!newsfeed.fjserv.net!oleane.net!oleane!freenix!sn-xit-02!sn-xit-01!sn-post-01!supernews.com!news.supernews.com!not-for-mail
+From: Guy Macon <http://www.guymacon.com>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree
+Date: Sun, 08 Aug 2004 13:01:52 -0700
+Organization: Electrical / Electronics Engineer Resume: http://www.guymacon.com
+Message-ID: <10hd1ote4q22pe2@news.supernews.com>
+References: <774e24ad.0406171158.315004d4@posting.google.com>
+MIME-Version: 1.0
+Content-Type: Text/Plain; charset=US-ASCII
+X-Complaints-To: abuse@supernews.com
+Lines: 24
+Xref: tunews.univie.ac.at comp.lang.forth:102411
+
+
+I found this today while searching fopr Forth versions that can
+act as standalone operating systems. I am not sure how it fits 
+into the tree.  
+
+"RetroForth is a public_domain implementation of the Forth 
+programming language. Originally written in 1998 by Tom Novelli, 
+and maintained by Charles Childers since 2002.
+
+"RetroForth [since version 3] is modeled after CMforth, Colorforth, 
+Eforth and Pygmy. It uses some, but not all, of Chuck Moore's 
+newer ideas. It's clean, elegant, and tiny - only about 20k 
+source/10k binary for Linux." 
+
+(Latest version: January 2004 RetroForth release 6.20)
+
+http://www.retroforth.org/
+http://retroforth.org/fwiki/
+http://www.bebits.com/app/3943/
+http://retroforth.org/fwiki/?id=history
+
+-- 
+Guy Macon <http://www.guymacon.com>
+
+
+Article: 102510 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeeder1.noc.eunet-ag.at!news.eunet.at!feed.news.tiscali.de!newsfeed.freenet.de!fr.ip.ndsoftware.net!216.196.110.149.MISMATCH!border2.nntp.ams.giganews.com!nntp.giganews.com!newsfeeder.wxs.nl!textnews.wxs.nl!not-for-mail
+From: Jos van de Ven <josv@wxs.nl>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Sat, 14 Aug 2004 22:17:15 +0200
+Organization: Planet Internet
+Lines: 17
+Message-ID: <cfls06$28h$1@reader13.wxs.nl>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <41112430.623894828@192.168.0.1>
+NNTP-Posting-Host: ip51cec706.speed.planet.nl
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Trace: reader13.wxs.nl 1092514630 2321 81.206.199.6 (14 Aug 2004 20:17:10 GMT)
+X-Complaints-To: abuse@planet.nl
+NNTP-Posting-Date: 14 Aug 2004 20:17:10 GMT
+X-Newsreader: 4ePost v1.10 compiled with Win32Forth
+Xref: tunews.univie.ac.at comp.lang.forth:102510
+
+
+Stephen wrote:
+> Here are the MPE systems from memory. Some dates may be a
+> little approximate.
+
+> 1988 ?? implementation GemForth
+> \ 32 bit version for the Atari ST
+>   GemForth implements Forth83
+>   PowerForth inspired GemForth
+>   PowerForth begot GemForth
+
+The GemForth I used was build on UNIX-FORTH 
+UNIX-FORTH was written by Mitch Bradley.
+
+Jos
+==
+4ePost: 368 bytes in mail. Elapsed time to buffer: .001423 sec.
+
+
+Article: 102843 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeeder1.noc.eunet-ag.at!news.eunet.at!feed.news.tiscali.de!blackbush.cw.net!newsfeed.stueberl.de!proxad.net!feeder2-1.proxad.net!news14-e.free.fr!not-for-mail
+From: "Bruno Gauthier" <bgauthier@free.fr>
+Newsgroups: comp.lang.forth
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <41112430.623894828@192.168.0.1> <cfls06$28h$1@reader13.wxs.nl>
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 1 Sep 2004 10:14:03 +0200
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Newsreader: Microsoft Outlook Express 6.00.2900.2180
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2180
+X-RFC2646: Format=Flowed; Original
+Lines: 25
+Message-ID: <413584b1$0$28841$636a15ce@news.free.fr>
+Organization: Guest of ProXad - France
+NNTP-Posting-Date: 01 Sep 2004 10:13:37 MEST
+NNTP-Posting-Host: 82.224.119.22
+X-Trace: 1094026417 news14-e.free.fr 28841 82.224.119.22:1363
+X-Complaints-To: abuse@proxad.net
+Xref: tunews.univie.ac.at comp.lang.forth:102843
+
+Hi,
+on Atari St , that was not gemforth but Forthmacs.
+Gem was the OS
+bruno
+"Jos van de Ven" <josv@wxs.nl> a écrit dans le message de news: 
+cfls06$28h$1@reader13.wxs.nl...
+>
+> Stephen wrote:
+>> Here are the MPE systems from memory. Some dates may be a
+>> little approximate.
+>
+>> 1988 ?? implementation GemForth
+>> \ 32 bit version for the Atari ST
+>>   GemForth implements Forth83
+>>   PowerForth inspired GemForth
+>>   PowerForth begot GemForth
+>
+> The GemForth I used was build on UNIX-FORTH
+> UNIX-FORTH was written by Mitch Bradley.
+>
+> Jos
+> ==
+> 4ePost: 368 bytes in mail. Elapsed time to buffer: .001423 sec. 
+
+
+
+
+Article: 102846 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeeder1.noc.eunet-ag.at!news.eunet.at!feed.news.tiscali.de!newsfeed.freenet.de!216.196.110.149.MISMATCH!border2.nntp.ams.giganews.com!border1.nntp.ams.giganews.com!nntp.giganews.com!newsfeeder.wxs.nl!textnews.wxs.nl!not-for-mail
+From: Jos van de Ven <josv@wxs.nl>
+Newsgroups: comp.lang.forth
+Subject: Re: Forth family tree (was: The future of Forth)
+Date: Wed, 1 Sep 2004 20:01:14 +0200
+Organization: Planet Internet
+Lines: 41
+Message-ID: <ch531i$kbc$1@reader10.wxs.nl>
+References: <774e24ad.0406171158.315004d4@posting.google.com> <2004Jun18.071304@mips.complang.tuwien.ac.at> <2004Aug2.202627@mips.complang.tuwien.ac.at> <41112430.623894828@192.168.0.1> <cfls06$28h$1@reader13.wxs.nl> <413584b1$0$28841$636a15ce@news.free.fr>
+NNTP-Posting-Host: ip51cec706.speed.planet.nl
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 8bit
+X-Trace: reader10.wxs.nl 1094061938 20844 81.206.199.6 (1 Sep 2004 18:05:38 GMT)
+X-Complaints-To: abuse@planet.nl
+NNTP-Posting-Date: 1 Sep 2004 18:05:38 GMT
+X-Newsreader: 4ePost v1.10 compiled with Win32Forth
+Xref: tunews.univie.ac.at comp.lang.forth:102846
+
+
+"Bruno Gauthier" wrote:
+> Hi,
+> on Atari St , that was not gemforth but Forthmacs.
+There were several Forth-systems for the Atari.
+
+> Gem was the OS
+The GemForth I used was build on UNIX-FORTH
+as an extension. I build it myself on it and gave it a new name.
+It was never put on the internet.
+It was spread from a local BBS.
+
+I got the name UNIX-FORTH from one of the disk.
+
+Jos
+
+> "Jos van de Ven" <josv@wxs.nl> a écrit dans le message de news: 
+> cfls06$28h$1@reader13.wxs.nl...
+> >
+> > Stephen wrote:
+> >> Here are the MPE systems from memory. Some dates may be a
+> >> little approximate.
+> >
+> >> 1988 ?? implementation GemForth
+> >> \ 32 bit version for the Atari ST
+> >>   GemForth implements Forth83
+> >>   PowerForth inspired GemForth
+> >>   PowerForth begot GemForth
+> >
+> > The GemForth I used was build on UNIX-FORTH
+> > UNIX-FORTH was written by Mitch Bradley.
+> >
+> > Jos
+> > ==
+> > 4ePost: 368 bytes in mail. Elapsed time to buffer: .001423 sec. 
+> 
+> 
+> .
+
+==
+4ePost: 1,008 bytes in mail. Elapsed time to buffer: .014742 sec.
+
+
+Article: 112703 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeed.utanet.at!news.germany.com!newsfeed01.sul.t-online.de!newsfeed00.sul.t-online.de!t-online.de!news1.dtag.de!miriam.mikron.de!news
+From: Bernd Paysan <bernd.paysan@gmx.de>
+Newsgroups: comp.lang.forth
+Subject: Re: New Distribution Package Distribution Packet VolksForth Atari ST Version 3.81
+Date: Wed, 17 Aug 2005 11:43:11 +0200
+Organization: Deutsche Telekom AG
+Lines: 24
+Message-ID: <fedbt2-bo3.ln1@miriam.mikron.de>
+References: <pan.2005.08.16.19.33.37.686859@strotmann.de> <2005Aug16.232959@mips.complang.tuwien.ac.at>
+NNTP-Posting-Host: 194.25.101.185
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7Bit
+X-Trace: news.dtag.de 1124275742 2386 194.25.101.185 (17 Aug 2005 10:49:02 GMT)
+X-Complaints-To: usenet@news.dtag.de
+NNTP-Posting-Date: 17 Aug 2005 10:49:02 GMT
+User-Agent: KNode/0.9.0
+Xref: tunews.univie.ac.at comp.lang.forth:112703
+
+Anton Ertl wrote:
+
+> Carsten Strotmann <cas_news@strotmann.de> writes:
+>>VolksForth is a 16bit Forth System produced by the German Forth
+>>Gesellschaft e.V. Main development of this system was done between 1985
+>>until 1989.
+> 
+> Hmm, I have the date 1981 in the family tree data (and 1986 for
+> TurboForth), and I think I have this from a posting by Klaus
+> Schleisiek here.  I don't see the posting on google groups, though.
+
+I got my volksForth 3.70 and 3.81 in 1986, and TurboForth (released later as
+bigFORTH) in 1989. volksForth followed the Forth-83 standard, so it must
+have started later than that. It also was a Forth Gesellschaft e.V. effort,
+and the FG was founded in 1984. 1985-86 for the main development effort,
+and -89 to TurboForth is the only possible time-line that fits all these
+constraints. Klaus might be thinking about earlier efforts which went into
+volksForth as well, but the project itself was started short after the
+foundation of the FG.
+
+-- 
+Bernd Paysan
+"If you want it done right, you have to do it yourself"
+http://www.jwdt.com/~paysan/
+
+
+Article: 112737 of comp.lang.forth
+Path: tunews.univie.ac.at!aconews-feed.univie.ac.at!newsfeed.wu-wien.ac.at!newsfeeder1.noc.eunet-ag.at!news.eunet.at!feed.news.tiscali.de!news.csl-gmbh.net!news1.dtag.de!miriam.mikron.de!news
+From: Bernd Paysan <bernd.paysan@gmx.de>
+Newsgroups: comp.lang.forth
+Subject: Re: VolksForth history (was: New Distribution Package ...)
+Date: Thu, 18 Aug 2005 14:29:59 +0200
+Organization: Deutsche Telekom AG
+Lines: 34
+Message-ID: <8jbet2-hn6.ln1@miriam.mikron.de>
+References: <pan.2005.08.16.19.33.37.686859@strotmann.de> <2005Aug16.232959@mips.complang.tuwien.ac.at> <fedbt2-bo3.ln1@miriam.mikron.de> <2005Aug17.145322@mips.complang.tuwien.ac.at>
+NNTP-Posting-Host: 194.25.101.185
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7Bit
+X-Trace: news.dtag.de 1124371741 14182 194.25.101.185 (18 Aug 2005 13:29:01 GMT)
+X-Complaints-To: usenet@news.dtag.de
+NNTP-Posting-Date: 18 Aug 2005 13:29:01 GMT
+User-Agent: KNode/0.9.0
+Xref: tunews.univie.ac.at comp.lang.forth:112737
+
+Anton Ertl wrote:
+>>I got my volksForth 3.70 and 3.81 in 1986, and TurboForth (released later
+>>as bigFORTH) in 1989. volksForth followed the Forth-83 standard, so it
+>>must have started later than that.
+> 
+> That was about what I originally had, until (IIRC) Klaus corrected me.
+> Maybe it was at EuroForth, not in a posting.  He also said that it was
+> not a 83-standard Forth.
+
+IIRC, I originally supposed that VolksForth was based on F83, but it
+actually was based on figForth, but changed to match the Forth-83 standard.
+The development might have included parts that Klaus developed in 1981,
+since volksForth started out of something Klaus had before.
+
+> Ok, I have corrected this to:
+> 
+> \ VolksForth and TurboForth
+> \U http://www.forth-ev.de/filemgmt/singlefile.php?lid=17
+> \I for MSDOS, 6502, Z80, Atari ST by Forth Gesellschaft
+> 1985 Implementation VolksForth
+> figForth begot VolksForth
+> VolksForth conforms-to Forth83
+>     
+> 1989 Implementation TurboForth
+> TurboForth conforms-to Forth83
+> VolksForth begot TurboForth
+
+I think most of TurboForth was implemented in 1988 or before, since in early
+1989, when I got it, the development already had stalled.
+
+-- 
+Bernd Paysan
+"If you want it done right, you have to do it yourself"
+http://www.jwdt.com/~paysan/
+
+
