@@ -134,6 +134,7 @@ digraph tree { rankdir=LR
 	figForth  -> MultiForth [weight=100]
 	MMSForth [fontname="Helvetica" shape=plaintext height=0 pos="900,0" URL="https://www.millermicro.com/mmsforth.html" tooltip="Author: Miller Microcomputer Services"];
 	Forth79  -> MMSForth [weight=1 color="red"]
+	microFORTH  -> MMSForth [weight=10 color="green"] 
 	MacForth [fontname="Helvetica" shape=plaintext height=0 pos="1400,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
 	MultiForth  -> MacForth [weight=100]
 	MacForthplus [label="MacForth+" fontname="Helvetica" shape=plaintext height=0 pos="1700,0" URL="http://www.macforth.com/" tooltip="Creative Solutions (Don Colburn)"];
