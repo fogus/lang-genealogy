@@ -179,9 +179,22 @@ Forth94 begot Forth2012
 
 \ implementations
 \ Info from HOPL-II paper
+
+\I SAO Pre-Forth
+1958 s" SAO Pre-Forth" name-implementation saoPreForth \ SAO Special Report #11, late 50s; SAO, 1958
+
+\I SLAC Pre-Forth
+1961 s" SLAC Pre-Forth" name-implementation slacPreForth
+saoPreForth inspired slacPreForth \ precise info would be nice
+
+\I Mohasco B5500 Pre-Forth
+1968 s" Mohasco Pre-Forth" name-implementation mohascoPreForth
+slacPreForth inspired mohascoPreForth \ precise info would be nice
+
 \I Chuck Moore's Language
 \U http://www.forth.com/resources/evolution/evolve_1.html
 1971 Implementation Forth \ Chuck Moore's language, early 70s; NRAO, 1972
+mohascoPreForth inspired Forth \ precise info would be nice
 Forth inspired AST01 \ precise info would be nice
 
 \ Implementation Forth                         \ NRAO 1972

@@ -27,7 +27,13 @@ digraph tree { rankdir=LR
 	Forth83  -> Forth94 [weight=100]
 	Forth2012 [label="Forth-2012" fontname="Helvetica" fontcolor="red" shape=plaintext height=0 pos="4400,0" URL="http://forth-standard.org" tooltip="Authors: Forth 200x Committee"];
 	Forth94  -> Forth2012 [weight=100]
+	saoPreForth [label="SAO Pre-Forth" fontname="Helvetica" shape=plaintext height=0 pos="-1200,0" tooltip="SAO Pre-Forth"];
+	slacPreForth [label="SLAC Pre-Forth" fontname="Helvetica" shape=plaintext height=0 pos="-900,0" tooltip="SLAC Pre-Forth"];
+	saoPreForth  -> slacPreForth [weight=10 color="green"] 
+	mohascoPreForth [label="Mohasco Pre-Forth" fontname="Helvetica" shape=plaintext height=0 pos="-200,0" tooltip="Mohasco B5500 Pre-Forth"];
+	slacPreForth  -> mohascoPreForth [weight=10 color="green"] 
 	Forth [fontname="Helvetica" shape=plaintext height=0 pos="100,0" URL="http://www.forth.com/resources/evolution/evolve_1.html" tooltip="Chuck Moore's Language"];
+	mohascoPreForth  -> Forth [weight=10 color="green"] 
 	Forth  -> AST01 [weight=10 color="green"] 
 	miniFORTH [fontname="Helvetica" shape=plaintext height=0 pos="300,0" URL="http://www.forth.com/resources/evolution/evolve_2.html#2.2" tooltip="Chuck Moore's Language as Forth Inc. product"];
 	Forth  -> miniFORTH [weight=100]
